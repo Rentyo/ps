@@ -87,14 +87,7 @@ public class Main{
 				kp++;
 				temp[l.get(0)][l.get(1)]= false;
 			}
-			for(int j = temp.length-1; j >=0; j--){
-				for(int k = 0; k < temp[0].length; k++){
-					if(temp[j][k]){
-						temp[j][k] = false;
-						if(j+1 != temp.length) temp[j+1][k] = true;
-					}
-				}
-			}
+			sCol--;
 		}
 		max = Math.max(kp,max);
 	}

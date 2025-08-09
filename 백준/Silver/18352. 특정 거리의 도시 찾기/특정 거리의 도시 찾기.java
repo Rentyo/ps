@@ -1,45 +1,64 @@
 import java.util.*;
+import java.io.*;
 class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int M = sc.nextInt();
-        int K = sc.nextInt();
-        int X = sc.nextInt();
-        int [] times = new int[N+1];
-        Arrays.fill(times, 300001);
-        times[X] = 0;
+    public static class Road implements Comparable<Road> {
+        int end;
+        int cost;
+        public Road(int end, int cost) {
+            this.end = end;
+            this.cost = cost;
+        }
+        @Override
+        public int compareTo(Road o){
+            return this.cost > o.cost ? 1 : this.cost < o.cost ? -1 : this.end - o.end;
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
+        int n = readInt();
+        int m = readInt();
+        int k = readInt();
+        int x = readInt();
         ArrayList<ArrayList<Integer>> map = new ArrayList<>();
-        for(int i = 0 ; i <= N; i++){
+        for(int i =0; i<n; i++){
             map.add(new ArrayList<>());
         }
+        for(int i = 0; i < m; i++){
+            int start = readInt();
+            int end = readInt();
+            map.get(start-1).add(end-1);
+        }
+        PriorityQueue<Road> pq = new PriorityQueue<>();
+        boolean[] v = new boolean[n];
+        v[x-1] = true;
+        for(int i = 0; i < map.get(x-1).size(); i++){
+            pq.offer(new Road(map.get(x-1).get(i), 1));
+        }
 
-        for(int i = 0 ; i < M; i++){
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            map.get(a).add(b);
-        }
-        Queue<Integer> q = new LinkedList<Integer>();
-        q.offer(X);
-        while (!q.isEmpty()) {
-            int now = q.poll();
-            for (int i = 0; i < map.get(now).size(); i++) {
-                int nextNode = map.get(now).get(i);
-                if (times[nextNode] == 300001) {
-                    times[nextNode] = times[now] + 1;
-                    q.offer(nextNode);
-                }
+        while(pq.size() > 0){
+            Road now = pq.poll();
+            int end = now.end;
+            if(v[end]) continue;
+            v[end] = true;
+            int cost = now.cost;
+            if(cost > k) break;
+            if(cost == k) sb.append(end+1).append("\n");
+
+            for(int i = 0; i< map.get(end).size(); i++){
+                if(v[map.get(end).get(i)]) continue;
+                pq.offer(new Road(map.get(end).get(i), cost+1));
             }
         }
-        boolean check = false;
-        for (int i = 1; i <= N; i++) {
-            if (times[i] == K) {
-                System.out.println(i);
-                check = true;
-            }
+        System.out.println(sb.length() == 0 ? -1 : sb);
+    }
+    public static int readInt() throws IOException {
+        int val;
+        int total = 0;
+        while((val = System.in.read()) > 32){
+            total= total*10 + val- '0';
         }
-        if (!check) {
-            System.out.println(-1);
-        }
+        return total;
     }
 }

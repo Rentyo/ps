@@ -16,6 +16,17 @@ COMMON_TIER_ORDER = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Unrated
 # SWEA 전용 티어 순서 (D1~D6 난이도: D1 < D2 < ... < D6)
 SWEA_TIER_ORDER = ["D1", "D2", "D3", "D4", "D5", "D6", "Unrated"]
 
+# SWEA 티어를 통계용 공통 티어로 매핑
+SWEA_STAT_MAP = {
+    "D1": "Diamond",
+    "D2": "Platinum",
+    "D3": "Gold",
+    "D4": "Silver",
+    "D5": "Bronze",
+    "D6": "Bronze",
+    "Unrated": "Unrated"
+}
+
 def get_last_commit_date(file_path):
     """파일 기준 마지막 커밋 날짜 가져오기"""
     if not os.path.exists(file_path):
@@ -27,7 +38,10 @@ def get_last_commit_date(file_path):
             text=True,
             check=True
         )
-        return result.stdout.strip()
+        date = result.stdout.strip()
+        if not date:
+            return "Unknown"
+        return date
     except subprocess.CalledProcessError:
         return "Unknown"
 
@@ -60,12 +74,12 @@ def parse_problems(platform_dir, platform_name):
                 if fname.endswith(".java"):
                     file_for_date = os.path.join(prob_path, fname)
                     break
-            solved_on = get_last_commit_date(file_for_date if file_for_date else prob_path)
+            solved_on = get_last_commit_date(file_for_date) if file_for_date else "Unknown"
 
             problems.append({
                 "id": prob_id,
                 "title": title,
-                "tier": difficulty if platform_name=="SWEA" else difficulty,
+                "tier": difficulty,
                 "solved_on": solved_on
             })
     return problems
@@ -119,16 +133,12 @@ def update_section(start_tag, end_tag, lines):
 
 def compute_statistics(problems, platform=None):
     """플랫폼별 통계 계산"""
-    if platform == "SWEA":
-        tiers = SWEA_TIER_ORDER
-    else:
-        tiers = COMMON_TIER_ORDER
-
-    stats = {tier:0 for tier in tiers}
+    stats = {tier:0 for tier in COMMON_TIER_ORDER}
     for p in problems:
-        tier = p["tier"]
         if platform == "SWEA":
-            tier = tier  # 그대로 사용
+            tier = SWEA_STAT_MAP.get(p["tier"], "Unrated")
+        else:
+            tier = p["tier"]
         stats[tier] = stats.get(tier,0)+1
     total = len(problems)
     return total, stats

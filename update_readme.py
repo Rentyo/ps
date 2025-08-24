@@ -1,95 +1,88 @@
 import os
 
-BASE_DIR = "."  # 저장소 루트 디렉토리
-README_FILE = "README.md"
+def generate_baekjoon_table(base_path="baekjoon"):
+    """
+    백준 문제 목록 테이블을 생성합니다.
+    """
+    table = "| 난이도 | 문제 번호 | 문제 이름 | 코드 |\n"
+    table += "|--------|-----------|-----------|------|\n"
 
+    for root, dirs, files in os.walk(base_path):
+        for dir_name in dirs:
+            # 예: 'silver/1000_A+B'
+            if "_" in dir_name and " " not in dir_name:
+                parts = dir_name.split('_', 1)
+                problem_number = parts[0]
+                problem_name = parts[1].replace('_', ' ')
+                difficulty = os.path.basename(root).capitalize()
+                link_path = os.path.join(root, dir_name)
+                
+                table += f"| {difficulty} | [{problem_number}](https://www.acmicpc.net/problem/{problem_number}) | {problem_name} | [풀이]({link_path}/Main.java) |\n"
+    return table
 
-def parse_problem_name(dirname):
-    """디렉토리 이름에서 문제 번호/이름 분리"""
-    if "_" in dirname:
-        num, name = dirname.split("_", 1)
-        return num, name
-    return None, dirname
+def generate_programmers_table(base_path="programmers"):
+    """
+    프로그래머스 문제 목록 테이블을 생성합니다.
+    """
+    table = "| 레벨 | 문제 이름 | 링크 | 코드 |\n"
+    table += "|------|-----------|------|------|\n"
+    
+    for root, dirs, files in os.walk(base_path):
+        for dir_name in dirs:
+            # 예: 'level1/12903_가운데글자가져오기'
+            if "_" in dir_name and dir_name.isdigit() == False:
+                parts = dir_name.split('_', 1)
+                problem_number = parts[0]
+                problem_name = parts[1]
+                level = os.path.basename(root).capitalize()
+                link_path = os.path.join(root, dir_name)
 
+                table += f"| {level} | {problem_name} | [문제](https://school.programmers.co.kr/learn/courses/30/lessons/{problem_number}) | [풀이]({link_path}/Solution.java) |\n"
+    return table
 
-def generate_table(root_dir, site):
-    """문제 목록 표 생성"""
-    rows = []
-    counts = {}  # 난이도/레벨 카운트
+def generate_swea_table(base_path="swea"):
+    """
+    SWEA 문제 목록 테이블을 생성합니다.
+    """
+    table = "| 난이도 | 문제 번호 | 문제 이름 | 코드 |\n"
+    table += "|--------|-----------|-----------|------|\n"
+    
+    for root, dirs, files in os.walk(base_path):
+        for dir_name in dirs:
+            if dir_name.isdigit(): # 예: 'D3/1206'
+                problem_number = dir_name
+                difficulty = os.path.basename(root)
+                link_path = os.path.join(root, dir_name)
+                
+                # SWEA는 문제 이름 추출이 어려워 링크만 제공
+                table += f"| {difficulty} | {problem_number} | - | [풀이]({link_path}/Solution.java) |\n"
+    return table
 
-    for level in sorted(os.listdir(root_dir)):
-        level_path = os.path.join(root_dir, level)
-        if not os.path.isdir(level_path):
-            continue
-        for problem in sorted(os.listdir(level_path)):
-            num, name = parse_problem_name(problem)
-            code_path = os.path.join(root_dir, level, problem)
-            if site == "baekjoon":
-                rows.append(
-                    f"| {level} | [{num}](https://www.acmicpc.net/problem/{num}) | {name} | [풀이]({code_path}) |"
-                )
-            elif site == "programmers":
-                rows.append(
-                    f"| {level} | {name} | [문제](https://school.programmers.co.kr/learn/courses/30/lessons/{num}) | [풀이]({code_path}) |"
-                )
-            elif site == "swea":
-                rows.append(
-                    f"| {level} | {num} | {name} | [풀이]({code_path}) |"
-                )
+def update_readme():
+    with open("README.md", "r", encoding="utf-8") as f:
+        readme_content = f.read()
 
-            counts[level] = counts.get(level, 0) + 1
+    # 각 테이블 시작/끝 주석
+    baekjoon_start = ""
+    baekjoon_end = ""
+    programmers_start = ""
+    programmers_end = ""
+    swea_start = ""
+    swea_end = ""
 
-    return rows, counts
+    # 테이블 생성
+    baekjoon_table = generate_baekjoon_table()
+    programmers_table = generate_programmers_table()
+    swea_table = generate_swea_table()
 
+    # README 내용 업데이트
+    new_readme_content = readme_content
+    new_readme_content = new_readme_content.replace(readme_content[readme_content.find(baekjoon_start):readme_content.find(baekjoon_end) + len(baekjoon_end)], f"{baekjoon_start}\n{baekjoon_table}{baekjoon_end}")
+    new_readme_content = new_readme_content.replace(readme_content[readme_content.find(programmers_start):readme_content.find(programmers_end) + len(programmers_end)], f"{programmers_start}\n{programmers_table}{programmers_end}")
+    new_readme_content = new_readme_content.replace(readme_content[readme_content.find(swea_start):readme_content.find(swea_end) + len(swea_end)], f"{swea_start}\n{swea_table}{swea_end}")
 
-def main():
-    readme_content = [
-        "# 📝 Algorithm Study Log\n\n",
-        "백준허브를 통해 자동 저장되는 문제 풀이 기록입니다.\n\n",
-        "## 📊 풀이 현황\n"
-    ]
-
-    sites = {
-        "baekjoon": "🔵 Baekjoon",
-        "programmers": "🟢 Programmers",
-        "swea": "🟠 SWEA"
-    }
-
-    total_counts = {}
-
-    # 현황 먼저 생성
-    for site, title in sites.items():
-        if not os.path.exists(site):
-            continue
-        _, counts = generate_table(site, site)
-        total = sum(counts.values())
-        detail = " / ".join([f"{k}: {v}" for k, v in counts.items()])
-        readme_content.append(f"- **{title}** : {total}문제 ({detail})\n")
-        total_counts[site] = (total, counts)
-
-    readme_content.append("\n---\n\n## 📂 사이트별 문제 모음\n\n")
-
-    # 상세 표 생성
-    for site, title in sites.items():
-        if not os.path.exists(site):
-            continue
-        rows, _ = generate_table(site, site)
-        readme_content.append(f"### {title}\n")
-        if site == "baekjoon":
-            readme_content.append("| 난이도 | 문제 번호 | 문제 이름 | 코드 |\n")
-            readme_content.append("|--------|-----------|-----------|------|\n")
-        elif site == "programmers":
-            readme_content.append("| 레벨 | 문제 이름 | 링크 | 코드 |\n")
-            readme_content.append("|------|-----------|------|------|\n")
-        elif site == "swea":
-            readme_content.append("| 난이도 | 문제 번호 | 문제 이름 | 코드 |\n")
-            readme_content.append("|--------|-----------|-----------|------|\n")
-        readme_content.extend([row + "\n" for row in rows])
-        readme_content.append("\n")
-
-    with open(README_FILE, "w", encoding="utf-8") as f:
-        f.writelines(readme_content)
-
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(new_readme_content)
 
 if __name__ == "__main__":
-    main()
+    update_readme()

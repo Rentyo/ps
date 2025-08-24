@@ -83,6 +83,32 @@
 <summary>풀이 문제 목록 보기</summary>
 
 <!-- SWEA_START -->
+<details>
+<summary>Bronze 문제 보기 (1개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| 현주가 좋아하는 제곱근 놀이 | Bronze | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/6782) |
+</details>
+
+<details>
+<summary>Silver 문제 보기 (3개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| 수영대회 결승전 （ 완전 탐색 ＋ 구현 ） | Silver | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/4193) |
+| ［S／W 문제해결 기본］ 10일차 － Contact | Silver | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/1238) |
+| ［S／W 문제해결 기본］ 7일차 － 미로2 | Silver | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/1227) |
+</details>
+
+<details>
+<summary>Unrated 문제 보기 (2개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| ［S／W 문제해결 응용］ 10일차 － 작업순서 | Unrated | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/1267) |
+| ［모의 SW 역량테스트］ 디저트 카페 | Unrated | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/2105) |
+</details>
 
 <!-- SWEA_END -->
 

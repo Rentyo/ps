@@ -9,8 +9,6 @@
 <details>
 <summary>풀이 문제 목록 보기</summary>
 
-| Problem | Tier | Solved On | Link |
-|---------|------|-----------|------|
 <!-- BOJ_START -->
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -60,8 +58,6 @@
 <details>
 <summary>풀이 문제 목록 보기</summary>
 
-| Problem | Level | Solved On | Link |
-|---------|-------|-----------|------|
 <!-- PRGM_START -->
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -75,8 +71,6 @@
 <details>
 <summary>풀이 문제 목록 보기</summary>
 
-| Problem | Level | Solved On | Link |
-|---------|-------|-----------|------|
 <!-- SWEA_START -->
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|

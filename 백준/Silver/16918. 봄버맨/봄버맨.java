@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+//커밋용
 public class Main {
     static int[] dCol = {1, 0, -1, 0};
     static int[] dRow = {0, 1, 0, -1};
@@ -72,4 +73,5 @@ public class Main {
         if(nC >= col || nC < 0 || nR >=row || nR < 0) return true;
         return false;
     }
+
 }

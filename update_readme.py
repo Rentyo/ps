@@ -67,7 +67,7 @@ def update_section(start_tag, end_tag, lines):
         f.write(content)
 
 def generate_table(problems, platform):
-    """문제 리스트를 마크다운 테이블 형태로 변환"""
+    """문제 리스트를 마크다운 테이블 형태로 변환 (날짜 제거, 표 형식)"""
     lines = []
     for p in problems:
         if platform == "백준":
@@ -76,7 +76,9 @@ def generate_table(problems, platform):
             link = f"https://swexpertacademy.com/main/code/problem/{p['id']}"  # 필요시 수정
         else:
             link = "#"  # 프로그래머스는 나중에 링크 연결 가능
-        line = f"| [{p['title']}]({link}) | {p['tier']} | {p['solved_on']} | [Link]({link}) |"
+
+        # 날짜 제거, 마크다운 표 형태
+        line = f"| {p['title']} | {p['tier']} | [Link]({link}) |"
         lines.append(line)
     return lines
 

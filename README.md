@@ -15,23 +15,23 @@
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
-| 결혼식 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/5567) |
-| 도영이가 만든 맛있는 음식 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/2961) |
-| 미로 탐색 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/2178) |
-| 바이러스 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/2606) |
+| 결혼식 | Silver | 2025-08-06 | [Link](https://www.acmicpc.net/problem/5567) |
+| 도영이가 만든 맛있는 음식 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/2961) |
+| 미로 탐색 | Silver | 2025-07-21 | [Link](https://www.acmicpc.net/problem/2178) |
+| 바이러스 | Silver | 2025-07-22 | [Link](https://www.acmicpc.net/problem/2606) |
 | 봄버맨 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/16918) |
-| 부분수열의 합 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/1182) |
-| 상근이의 여행 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/9372) |
-| 섬의 개수 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/4963) |
-| 순열 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/9742) |
-| 스타트링크 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/5014) |
-| 신입 사원 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/1946) |
-| 영역 구하기 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/2583) |
-| 영일랜드 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/31871) |
-| 자리배정 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/10157) |
-| 차이를 최대로 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/10819) |
-| 특정 거리의 도시 찾기 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/18352) |
-| 효율적인 해킹 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/1325) |
+| 부분수열의 합 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/1182) |
+| 상근이의 여행 | Silver | 2025-08-11 | [Link](https://www.acmicpc.net/problem/9372) |
+| 섬의 개수 | Silver | 2025-08-06 | [Link](https://www.acmicpc.net/problem/4963) |
+| 순열 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/9742) |
+| 스타트링크 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/5014) |
+| 신입 사원 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/1946) |
+| 영역 구하기 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/2583) |
+| 영일랜드 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/31871) |
+| 자리배정 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/10157) |
+| 차이를 최대로 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/10819) |
+| 특정 거리의 도시 찾기 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/18352) |
+| 효율적인 해킹 | Silver | 2025-08-07 | [Link](https://www.acmicpc.net/problem/1325) |
 </details>
 
 <details>
@@ -39,25 +39,25 @@
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
-| 2048 （Easy） | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/12100) |
-| ⚾ | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/17281) |
-| 감시 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/15683) |
-| 게리맨더링 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/17471) |
-| 괄호 추가하기 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/16637) |
-| 다리 만들기 2 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/17472) |
-| 달이 차오른다， 가자． | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/1194) |
-| 두 용액 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/2470) |
-| 말이 되고픈 원숭이 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/1600) |
-| 배열 돌리기 4 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/17406) |
-| 벽 부수고 이동하기 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/2206) |
+| 2048 （Easy） | Gold | 2025-08-13 | [Link](https://www.acmicpc.net/problem/12100) |
+| ⚾ | Gold | 2025-08-09 | [Link](https://www.acmicpc.net/problem/17281) |
+| 감시 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/15683) |
+| 게리맨더링 | Gold | 2025-08-16 | [Link](https://www.acmicpc.net/problem/17471) |
+| 괄호 추가하기 | Gold | 2025-07-24 | [Link](https://www.acmicpc.net/problem/16637) |
+| 다리 만들기 2 | Gold | 2025-08-19 | [Link](https://www.acmicpc.net/problem/17472) |
+| 달이 차오른다， 가자． | Gold | 2025-08-23 | [Link](https://www.acmicpc.net/problem/1194) |
+| 두 용액 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2470) |
+| 말이 되고픈 원숭이 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/1600) |
+| 배열 돌리기 4 | Gold | 2025-08-15 | [Link](https://www.acmicpc.net/problem/17406) |
+| 벽 부수고 이동하기 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/2206) |
 | 벽 부수고 이동하기 2 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/14442) |
-| 아기 상어 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/16236) |
-| 알파벳 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/1987) |
-| 연구소 3 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/17142) |
-| 줄 세우기 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/2252) |
-| 캐슬 디펜스 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/17135) |
-| 파이프 옮기기 1 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/17070) |
-| 행렬 제곱 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/10830) |
+| 아기 상어 | Gold | 2025-08-23 | [Link](https://www.acmicpc.net/problem/16236) |
+| 알파벳 | Gold | 2025-07-20 | [Link](https://www.acmicpc.net/problem/1987) |
+| 연구소 3 | Gold | 2025-08-14 | [Link](https://www.acmicpc.net/problem/17142) |
+| 줄 세우기 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2252) |
+| 캐슬 디펜스 | Gold | 2025-08-03 | [Link](https://www.acmicpc.net/problem/17135) |
+| 파이프 옮기기 1 | Gold | 2025-07-26 | [Link](https://www.acmicpc.net/problem/17070) |
+| 행렬 제곱 | Gold | 2025-08-06 | [Link](https://www.acmicpc.net/problem/10830) |
 </details>
 
 <!-- BOJ_END -->
@@ -88,9 +88,9 @@
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
-| 수영대회 결승전 （ 완전 탐색 ＋ 구현 ） | D4 | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/4193) |
-| ［S／W 문제해결 기본］ 10일차 － Contact | D4 | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/1238) |
-| ［S／W 문제해결 기본］ 7일차 － 미로2 | D4 | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/1227) |
+| 수영대회 결승전 （ 완전 탐색 ＋ 구현 ） | D4 | 2025-08-20 | [Link](https://swexpertacademy.com/main/code/problem/4193) |
+| ［S／W 문제해결 기본］ 10일차 － Contact | D4 | 2025-08-20 | [Link](https://swexpertacademy.com/main/code/problem/1238) |
+| ［S／W 문제해결 기본］ 7일차 － 미로2 | D4 | 2025-08-23 | [Link](https://swexpertacademy.com/main/code/problem/1227) |
 </details>
 
 <details>
@@ -98,7 +98,7 @@
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
-| 현주가 좋아하는 제곱근 놀이 | D5 | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/6782) |
+| 현주가 좋아하는 제곱근 놀이 | D5 | 2025-08-14 | [Link](https://swexpertacademy.com/main/code/problem/6782) |
 </details>
 
 <details>
@@ -106,7 +106,7 @@
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
-| ［S／W 문제해결 응용］ 10일차 － 작업순서 | D6 | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/1267) |
+| ［S／W 문제해결 응용］ 10일차 － 작업순서 | D6 | 2025-08-23 | [Link](https://swexpertacademy.com/main/code/problem/1267) |
 </details>
 
 <details>
@@ -114,7 +114,7 @@
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
-| ［모의 SW 역량테스트］ 디저트 카페 | Unrated | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/2105) |
+| ［모의 SW 역량테스트］ 디저트 카페 | Unrated | 2025-08-21 | [Link](https://swexpertacademy.com/main/code/problem/2105) |
 </details>
 
 <!-- SWEA_END -->

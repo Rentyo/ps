@@ -8,6 +8,7 @@ README_FILE = "README.md"
 PLATFORMS = {
     "백준": "<!-- BOJ_START -->",
     "SWEA": "<!-- SWEA_START -->",
+    "프로그래머스": "<!-- PRGM_START -->",  # 나중에 추가 가능
 }
 
 def get_last_commit_date(file_path):
@@ -25,6 +26,9 @@ def get_last_commit_date(file_path):
 
 def parse_problems(platform_dir):
     """폴더 구조를 탐색해서 문제 정보 수집"""
+    if not os.path.exists(platform_dir):
+        return []
+
     problems = []
     for difficulty in sorted(os.listdir(platform_dir)):
         diff_path = os.path.join(platform_dir, difficulty)
@@ -69,16 +73,17 @@ def generate_table(problems, platform):
         if platform == "백준":
             link = f"https://www.acmicpc.net/problem/{p['id']}"
         elif platform == "SWEA":
-            link = f"https://swexpertacademy.com/main/code/problem/{p['id']}"  # 실제 SWEA 링크는 필요에 따라 수정
+            link = f"https://swexpertacademy.com/main/code/problem/{p['id']}"  # 필요시 수정
         else:
-            link = "#"
+            link = "#"  # 프로그래머스는 나중에 링크 연결 가능
         line = f"| [{p['title']}]({link}) | {p['tier']} | {p['solved_on']} | [Link]({link}) |"
         lines.append(line)
     return lines
 
 def main():
     for platform, tag in PLATFORMS.items():
-        problems = parse_problems(platform)
+        dir_path = platform
+        problems = parse_problems(dir_path)
         lines = generate_table(problems, platform)
         end_tag = tag.replace("START", "END")
         update_section(tag, end_tag, lines)

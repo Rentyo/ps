@@ -14,6 +14,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        fetch-depth: 0   # <-- 전체 커밋 히스토리를 가져오기
 
       - name: Set up Python
         uses: actions/setup-python@v4

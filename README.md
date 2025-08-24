@@ -12,6 +12,8 @@
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 <!-- BOJ_START -->
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
 | 행렬 제곱 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/10830) |
 | 달이 차오른다， 가자． | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/1194) |
 | 2048 （Easy） | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/12100) |
@@ -61,7 +63,8 @@
 | Problem | Level | Solved On | Link |
 |---------|-------|-----------|------|
 <!-- PRGM_START -->
-
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
 <!-- PRGM_END -->
 
 </details>
@@ -75,6 +78,8 @@
 | Problem | Level | Solved On | Link |
 |---------|-------|-----------|------|
 <!-- SWEA_START -->
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
 | ［S／W 문제해결 기본］ 7일차 － 미로2 | D4 | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/1227) |
 | ［S／W 문제해결 기본］ 10일차 － Contact | D4 | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/1238) |
 | 수영대회 결승전 （ 완전 탐색 ＋ 구현 ） | D4 | 2025-08-24 | [Link](https://swexpertacademy.com/main/code/problem/4193) |

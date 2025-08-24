@@ -6,12 +6,12 @@ README_FILE = "README.md"
 
 PLATFORMS = {
     "백준": "<!-- BOJ_START -->",
-    "SWEA": "<!-- SWEA_START -->",
-    "프로그래머스": "<!-- PRGM_START -->"
+    "프로그래머스": "<!-- PRGM_START -->",
+    "SWEA": "<!-- SWEA_START -->"
 }
 
-# 난이도 순서
-TIER_ORDER = {"Platinum": 1, "Gold": 2, "Silver": 3, "Bronze": 4}
+# 티어 순서 (정렬 및 토글 표시 기준)
+TIER_ORDER = ["Bronze", "Silver", "Gold", "Platinum", "Diamond"]
 
 def get_last_commit_date(file_path):
     """파일 기준 마지막 커밋 날짜 가져오기"""
@@ -29,7 +29,7 @@ def get_last_commit_date(file_path):
         return "Unknown"
 
 def parse_problems(platform_dir):
-    """폴더 구조를 탐색해서 문제 정보 수집"""
+    """폴더 구조 탐색 후 문제 정보 수집"""
     if not os.path.exists(platform_dir):
         return []
 
@@ -43,7 +43,6 @@ def parse_problems(platform_dir):
             if not os.path.isdir(prob_path):
                 continue
 
-            # 폴더명에서 번호와 제목 추출
             match = re.match(r"(\d+)\.\s*(.+)", prob_folder)
             if match:
                 prob_id, title = match.groups()
@@ -67,35 +66,36 @@ def parse_problems(platform_dir):
             })
     return problems
 
-def sort_problems(problems, by="tier"):
-    """문제 리스트 정렬"""
-    if by == "tier":
-        return sorted(problems, key=lambda x: TIER_ORDER.get(x["tier"], 99))
-    elif by == "date":
-        return sorted(problems, key=lambda x: x["solved_on"], reverse=True)
-    else:
-        return problems
+def sort_problems(problems):
+    """난이도 순 + 제목순 정렬"""
+    tier_priority = {tier: i for i, tier in enumerate(TIER_ORDER)}
+    return sorted(problems, key=lambda x: (tier_priority.get(x["tier"], 99), x["title"]))
 
-def generate_table(problems, platform):
-    """문제 리스트를 마크다운 테이블 형태로 변환"""
-    lines = []
+def generate_table_by_tier(problems, platform):
+    """티어별 <details> 토글로 마크다운 테이블 생성"""
+    tier_groups = {tier: [] for tier in TIER_ORDER}
     for p in problems:
-        if platform == "백준":
-            link = f"https://www.acmicpc.net/problem/{p['id']}"
-        elif platform == "SWEA":
-            link = f"https://swexpertacademy.com/main/code/problem/{p['id']}"  # 필요시 수정
-        elif platform == "프로그래머스":
-            link = f"https://school.programmers.co.kr/learn/courses/30/lessons/{p['id']}"
-        else:
-            link = "#"
+        tier_groups.setdefault(p["tier"], []).append(p)
 
-        line = f"| {p['title']} | {p['tier']} | {p['solved_on']} | [Link]({link}) |"
-        lines.append(line)
-
-    # 테이블 헤더
-    header = "| Problem | Tier | Solved On | Link |"
-    separator = "|---------|------|-----------|------|"
-    return [header, separator] + lines
+    tables = []
+    for tier in TIER_ORDER:
+        if not tier_groups.get(tier):
+            continue
+        tables.append(f"<details>\n<summary>{tier} 문제 보기 ({len(tier_groups[tier])}개)</summary>\n")
+        tables.append("| Problem | Tier | Solved On | Link |")
+        tables.append("|---------|------|-----------|------|")
+        for p in tier_groups[tier]:
+            if platform == "백준":
+                link = f"https://www.acmicpc.net/problem/{p['id']}"
+            elif platform == "SWEA":
+                link = f"https://swexpertacademy.com/main/code/problem/{p['id']}"
+            elif platform == "프로그래머스":
+                link = f"https://school.programmers.co.kr/learn/courses/30/lessons/{p['id']}"
+            else:
+                link = "#"
+            tables.append(f"| {p['title']} | {p['tier']} | {p['solved_on']} | [Link]({link}) |")
+        tables.append("</details>\n")
+    return tables
 
 def update_section(start_tag, end_tag, lines):
     with open(README_FILE, "r", encoding="utf-8") as f:
@@ -105,14 +105,46 @@ def update_section(start_tag, end_tag, lines):
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write(content)
 
+def compute_statistics(problems):
+    tiers = TIER_ORDER
+    stats = {tier: 0 for tier in tiers}
+    for p in problems:
+        if p["tier"] in stats:
+            stats[p["tier"]] += 1
+    total = len(problems)
+    return total, stats
+
+def update_stats_section(boj, prgm, swea):
+    lines = ["| Platform | Solved | " + " | ".join(TIER_ORDER) + " |",
+             "|----------|-------|" + "--------|"*len(TIER_ORDER)]
+    for platform_name, probs in [("BOJ", boj), ("Programmers", prgm), ("SWEA", swea)]:
+        total, stats = compute_statistics(probs)
+        tier_counts = " | ".join(str(stats.get(t, 0)) for t in TIER_ORDER)
+        lines.append(f"| {platform_name} | {total} | {tier_counts} |")
+    start_tag = "<!-- STATS_START -->"
+    end_tag = "<!-- STATS_END -->"
+    with open(README_FILE, "r", encoding="utf-8") as f:
+        content = f.read()
+    new_section = start_tag + "\n" + "\n".join(lines) + "\n" + end_tag
+    content = re.sub(f"{start_tag}.*?{end_tag}", new_section, content, flags=re.DOTALL)
+    with open(README_FILE, "w", encoding="utf-8") as f:
+        f.write(content)
+
 def main():
-    for platform, tag in PLATFORMS.items():
-        problems = parse_problems(platform)
-        problems = sort_problems(problems, by="tier")  # 난이도 순으로 정렬
-        table_lines = generate_table(problems, platform)
-        end_tag = tag.replace("START", "END")
+    boj_problems = sort_problems(parse_problems("백준"))
+    prgm_problems = sort_problems(parse_problems("프로그래머스"))
+    swea_problems = sort_problems(parse_problems("SWEA"))
+
+    for platform, tag, probs in [("백준","<!-- BOJ_START -->",boj_problems),
+                                 ("프로그래머스","<!-- PRGM_START -->",prgm_problems),
+                                 ("SWEA","<!-- SWEA_START -->",swea_problems)]:
+        table_lines = generate_table_by_tier(probs, platform)
+        end_tag = tag.replace("START","END")
         update_section(tag, end_tag, table_lines)
-        print(f"✅ {platform} 업데이트 완료! 총 {len(problems)}문제 적용됨.")
+        print(f"✅ {platform} 문제 업데이트 완료! 총 {len(probs)}문제 적용됨.")
+
+    update_stats_section(boj_problems, prgm_problems, swea_problems)
+    print("📊 통계 섹션 업데이트 완료!")
 
 if __name__ == "__main__":
     main()

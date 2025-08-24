@@ -10,18 +10,11 @@ PLATFORMS = {
     "SWEA": "<!-- SWEA_START -->"
 }
 
-# 티어 순서 (정렬 및 통계 기준)
-TIER_ORDER = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Unrated"]
+# 공통 티어 순서
+COMMON_TIER_ORDER = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Unrated"]
 
-# SWEA 티어 매핑 (통계용)
-SWEA_TIER_MAP = {
-    "D1": "Diamond",
-    "D2": "Platinum",
-    "D3": "Gold",
-    "D4": "Silver",
-    "D5": "Bronze",
-    "Unrated": "Unrated"
-}
+# SWEA 전용 티어 순서 (D1~D6 난이도: D1 < D2 < ... < D6)
+SWEA_TIER_ORDER = ["D1", "D2", "D3", "D4", "D5", "D6", "Unrated"]
 
 def get_last_commit_date(file_path):
     """파일 기준 마지막 커밋 날짜 가져오기"""
@@ -67,35 +60,37 @@ def parse_problems(platform_dir, platform_name):
                 if fname.endswith(".java"):
                     file_for_date = os.path.join(prob_path, fname)
                     break
-
             solved_on = get_last_commit_date(file_for_date if file_for_date else prob_path)
-
-            # SWEA 티어 매핑
-            tier = difficulty
-            if platform_name == "SWEA":
-                tier = SWEA_TIER_MAP.get(difficulty, "Unrated")
 
             problems.append({
                 "id": prob_id,
                 "title": title,
-                "tier": tier,
+                "tier": difficulty if platform_name=="SWEA" else difficulty,
                 "solved_on": solved_on
             })
     return problems
 
-def sort_problems(problems):
+def sort_problems(problems, platform=None):
     """난이도 순 + 제목순 정렬"""
-    tier_priority = {tier: i for i, tier in enumerate(TIER_ORDER)}
-    return sorted(problems, key=lambda x: (tier_priority.get(x["tier"], 99), x["title"]))
+    if platform == "SWEA":
+        tier_order = {tier:i for i, tier in enumerate(SWEA_TIER_ORDER)}
+    else:
+        tier_order = {tier:i for i, tier in enumerate(COMMON_TIER_ORDER)}
+    return sorted(problems, key=lambda x: (tier_order.get(x["tier"], 99), x["title"]))
 
 def generate_table_by_tier(problems, platform):
     """티어별 <details> 토글로 마크다운 테이블 생성"""
-    tier_groups = {tier: [] for tier in TIER_ORDER}
+    if platform == "SWEA":
+        tier_order = SWEA_TIER_ORDER
+    else:
+        tier_order = COMMON_TIER_ORDER
+
+    tier_groups = {tier: [] for tier in tier_order}
     for p in problems:
         tier_groups.setdefault(p["tier"], []).append(p)
 
     tables = []
-    for tier in TIER_ORDER:
+    for tier in tier_order:
         if not tier_groups.get(tier):
             continue
         tables.append(f"<details>\n<summary>{tier} 문제 보기 ({len(tier_groups[tier])}개)</summary>\n")
@@ -122,21 +117,28 @@ def update_section(start_tag, end_tag, lines):
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write(content)
 
-def compute_statistics(problems):
-    tiers = TIER_ORDER
-    stats = {tier: 0 for tier in tiers}
+def compute_statistics(problems, platform=None):
+    """플랫폼별 통계 계산"""
+    if platform == "SWEA":
+        tiers = SWEA_TIER_ORDER
+    else:
+        tiers = COMMON_TIER_ORDER
+
+    stats = {tier:0 for tier in tiers}
     for p in problems:
         tier = p["tier"]
-        stats[tier] = stats.get(tier, 0) + 1
+        if platform == "SWEA":
+            tier = tier  # 그대로 사용
+        stats[tier] = stats.get(tier,0)+1
     total = len(problems)
     return total, stats
 
 def update_stats_section(boj, prgm, swea):
-    lines = ["| Platform | Solved | " + " | ".join(TIER_ORDER) + " |",
-             "|----------|-------|" + "--------|"*len(TIER_ORDER)]
+    lines = ["| Platform | Solved | " + " | ".join(COMMON_TIER_ORDER) + " |",
+             "|----------|-------|" + "--------|"*len(COMMON_TIER_ORDER)]
     for platform_name, probs in [("BOJ", boj), ("Programmers", prgm), ("SWEA", swea)]:
-        total, stats = compute_statistics(probs)
-        tier_counts = " | ".join(str(stats.get(t, 0)) for t in TIER_ORDER)
+        total, stats = compute_statistics(probs, platform_name if platform_name=="SWEA" else None)
+        tier_counts = " | ".join(str(stats.get(t, 0)) for t in COMMON_TIER_ORDER)
         lines.append(f"| {platform_name} | {total} | {tier_counts} |")
     start_tag = "<!-- STATS_START -->"
     end_tag = "<!-- STATS_END -->"
@@ -150,7 +152,7 @@ def update_stats_section(boj, prgm, swea):
 def main():
     boj_problems = sort_problems(parse_problems("백준", "백준"))
     prgm_problems = sort_problems(parse_problems("프로그래머스", "프로그래머스"))
-    swea_problems = sort_problems(parse_problems("SWEA", "SWEA"))
+    swea_problems = sort_problems(parse_problems("SWEA", "SWEA"), platform="SWEA")
 
     for platform, tag, probs in [("백준","<!-- BOJ_START -->",boj_problems),
                                  ("프로그래머스","<!-- PRGM_START -->",prgm_problems),

@@ -67,7 +67,7 @@ def update_section(start_tag, end_tag, lines):
         f.write(content)
 
 def generate_table(problems, platform):
-    """문제 리스트를 마크다운 테이블 형태로 변환 (날짜 제거, 표 형식)"""
+    """문제 리스트를 마크다운 테이블 형태로 변환 (커밋 날짜 사용)"""
     lines = []
     for p in problems:
         if platform == "백준":
@@ -77,8 +77,8 @@ def generate_table(problems, platform):
         else:
             link = "#"  # 프로그래머스는 나중에 링크 연결 가능
 
-        # 날짜 제거, 마크다운 표 형태
-        line = f"| {p['title']} | {p['tier']} | [Link]({link}) |"
+        # 마지막 커밋 날짜 already in p['solved_on']
+        line = f"| {p['title']} | {p['tier']} | {p['solved_on']} | [Link]({link}) |"
         lines.append(line)
     return lines
 

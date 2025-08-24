@@ -1,18 +1,19 @@
 import os
 import re
 import subprocess
-from datetime import datetime
 
 README_FILE = "README.md"
 
 PLATFORMS = {
     "백준": "<!-- BOJ_START -->",
     "SWEA": "<!-- SWEA_START -->",
-    "프로그래머스": "<!-- PRGM_START -->",  # 나중에 추가 가능
+    "프로그래머스": "<!-- PRGM_START -->"  # 나중 추가 가능
 }
 
 def get_last_commit_date(file_path):
-    """git log를 이용해 마지막 커밋 날짜 가져오기"""
+    """파일 기준 마지막 커밋 날짜 가져오기"""
+    if not os.path.exists(file_path):
+        return "Unknown"
     try:
         result = subprocess.run(
             ["git", "log", "-1", "--format=%cd", "--date=short", file_path],
@@ -46,9 +47,14 @@ def parse_problems(platform_dir):
             else:
                 prob_id, title = prob_folder, prob_folder
 
-            # 마지막 커밋 날짜 가져오기 (폴더 내 README.md 우선)
-            readme_path = os.path.join(prob_path, "README.md")
-            solved_on = get_last_commit_date(readme_path if os.path.exists(readme_path) else prob_path)
+            # 문제 폴더 내 .java 파일 기준 마지막 커밋 날짜
+            file_for_date = None
+            for fname in os.listdir(prob_path):
+                if fname.endswith(".java"):
+                    file_for_date = os.path.join(prob_path, fname)
+                    break
+
+            solved_on = get_last_commit_date(file_for_date if file_for_date else prob_path)
 
             problems.append({
                 "id": prob_id,
@@ -58,16 +64,8 @@ def parse_problems(platform_dir):
             })
     return problems
 
-def update_section(start_tag, end_tag, lines):
-    with open(README_FILE, "r", encoding="utf-8") as f:
-        content = f.read()
-    new_section = start_tag + "\n" + "\n".join(lines) + "\n" + end_tag
-    content = re.sub(f"{start_tag}.*?{end_tag}", new_section, content, flags=re.DOTALL)
-    with open(README_FILE, "w", encoding="utf-8") as f:
-        f.write(content)
-
 def generate_table(problems, platform):
-    """문제 리스트를 마크다운 테이블 형태로 변환 (커밋 날짜 사용)"""
+    """문제 리스트를 마크다운 테이블 형태로 변환"""
     lines = []
     for p in problems:
         if platform == "백준":
@@ -77,18 +75,28 @@ def generate_table(problems, platform):
         else:
             link = "#"  # 프로그래머스는 나중에 링크 연결 가능
 
-        # 마지막 커밋 날짜 already in p['solved_on']
         line = f"| {p['title']} | {p['tier']} | {p['solved_on']} | [Link]({link}) |"
         lines.append(line)
-    return lines
+
+    # 테이블 헤더 추가
+    header = "| Problem | Tier | Solved On | Link |"
+    separator = "|---------|------|-----------|------|"
+    return [header, separator] + lines
+
+def update_section(start_tag, end_tag, lines):
+    with open(README_FILE, "r", encoding="utf-8") as f:
+        content = f.read()
+    new_section = start_tag + "\n" + "\n".join(lines) + "\n" + end_tag
+    content = re.sub(f"{start_tag}.*?{end_tag}", new_section, content, flags=re.DOTALL)
+    with open(README_FILE, "w", encoding="utf-8") as f:
+        f.write(content)
 
 def main():
     for platform, tag in PLATFORMS.items():
-        dir_path = platform
-        problems = parse_problems(dir_path)
-        lines = generate_table(problems, platform)
+        problems = parse_problems(platform)
+        table_lines = generate_table(problems, platform)
         end_tag = tag.replace("START", "END")
-        update_section(tag, end_tag, lines)
+        update_section(tag, end_tag, table_lines)
         print(f"✅ {platform} 업데이트 완료! 총 {len(problems)}문제 적용됨.")
 
 if __name__ == "__main__":

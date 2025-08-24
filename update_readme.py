@@ -10,8 +10,18 @@ PLATFORMS = {
     "SWEA": "<!-- SWEA_START -->"
 }
 
-# 티어 순서 (정렬 및 토글 표시 기준)
-TIER_ORDER = ["Bronze", "Silver", "Gold", "Platinum", "Diamond"]
+# 티어 순서 (정렬 및 통계 기준)
+TIER_ORDER = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Unrated"]
+
+# SWEA 티어 매핑 (통계용)
+SWEA_TIER_MAP = {
+    "D1": "Diamond",
+    "D2": "Platinum",
+    "D3": "Gold",
+    "D4": "Silver",
+    "D5": "Bronze",
+    "Unrated": "Unrated"
+}
 
 def get_last_commit_date(file_path):
     """파일 기준 마지막 커밋 날짜 가져오기"""
@@ -28,7 +38,7 @@ def get_last_commit_date(file_path):
     except subprocess.CalledProcessError:
         return "Unknown"
 
-def parse_problems(platform_dir):
+def parse_problems(platform_dir, platform_name):
     """폴더 구조 탐색 후 문제 정보 수집"""
     if not os.path.exists(platform_dir):
         return []
@@ -43,13 +53,15 @@ def parse_problems(platform_dir):
             if not os.path.isdir(prob_path):
                 continue
 
+            # 문제 ID와 제목 추출
             match = re.match(r"(\d+)\.\s*(.+)", prob_folder)
             if match:
                 prob_id, title = match.groups()
             else:
-                prob_id, title = prob_folder, prob_folder
+                prob_id = prob_folder
+                title = prob_folder
 
-            # 문제 폴더 내 .java 파일 기준 마지막 커밋 날짜
+            # 파일 기준 마지막 커밋 날짜
             file_for_date = None
             for fname in os.listdir(prob_path):
                 if fname.endswith(".java"):
@@ -58,10 +70,15 @@ def parse_problems(platform_dir):
 
             solved_on = get_last_commit_date(file_for_date if file_for_date else prob_path)
 
+            # SWEA 티어 매핑
+            tier = difficulty
+            if platform_name == "SWEA":
+                tier = SWEA_TIER_MAP.get(difficulty, "Unrated")
+
             problems.append({
                 "id": prob_id,
                 "title": title,
-                "tier": difficulty,
+                "tier": tier,
                 "solved_on": solved_on
             })
     return problems
@@ -109,8 +126,8 @@ def compute_statistics(problems):
     tiers = TIER_ORDER
     stats = {tier: 0 for tier in tiers}
     for p in problems:
-        if p["tier"] in stats:
-            stats[p["tier"]] += 1
+        tier = p["tier"]
+        stats[tier] = stats.get(tier, 0) + 1
     total = len(problems)
     return total, stats
 
@@ -131,9 +148,9 @@ def update_stats_section(boj, prgm, swea):
         f.write(content)
 
 def main():
-    boj_problems = sort_problems(parse_problems("백준"))
-    prgm_problems = sort_problems(parse_problems("프로그래머스"))
-    swea_problems = sort_problems(parse_problems("SWEA"))
+    boj_problems = sort_problems(parse_problems("백준", "백준"))
+    prgm_problems = sort_problems(parse_problems("프로그래머스", "프로그래머스"))
+    swea_problems = sort_problems(parse_problems("SWEA", "SWEA"))
 
     for platform, tag, probs in [("백준","<!-- BOJ_START -->",boj_problems),
                                  ("프로그래머스","<!-- PRGM_START -->",prgm_problems),

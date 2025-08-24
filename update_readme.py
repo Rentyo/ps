@@ -7,8 +7,11 @@ README_FILE = "README.md"
 PLATFORMS = {
     "백준": "<!-- BOJ_START -->",
     "SWEA": "<!-- SWEA_START -->",
-    "프로그래머스": "<!-- PRGM_START -->"  # 나중 추가 가능
+    "프로그래머스": "<!-- PRGM_START -->"
 }
+
+# 난이도 순서
+TIER_ORDER = {"Platinum": 1, "Gold": 2, "Silver": 3, "Bronze": 4}
 
 def get_last_commit_date(file_path):
     """파일 기준 마지막 커밋 날짜 가져오기"""
@@ -64,6 +67,15 @@ def parse_problems(platform_dir):
             })
     return problems
 
+def sort_problems(problems, by="tier"):
+    """문제 리스트 정렬"""
+    if by == "tier":
+        return sorted(problems, key=lambda x: TIER_ORDER.get(x["tier"], 99))
+    elif by == "date":
+        return sorted(problems, key=lambda x: x["solved_on"], reverse=True)
+    else:
+        return problems
+
 def generate_table(problems, platform):
     """문제 리스트를 마크다운 테이블 형태로 변환"""
     lines = []
@@ -72,13 +84,15 @@ def generate_table(problems, platform):
             link = f"https://www.acmicpc.net/problem/{p['id']}"
         elif platform == "SWEA":
             link = f"https://swexpertacademy.com/main/code/problem/{p['id']}"  # 필요시 수정
+        elif platform == "프로그래머스":
+            link = f"https://school.programmers.co.kr/learn/courses/30/lessons/{p['id']}"
         else:
-            link = "#"  # 프로그래머스는 나중에 링크 연결 가능
+            link = "#"
 
         line = f"| {p['title']} | {p['tier']} | {p['solved_on']} | [Link]({link}) |"
         lines.append(line)
 
-    # 테이블 헤더 추가
+    # 테이블 헤더
     header = "| Problem | Tier | Solved On | Link |"
     separator = "|---------|------|-----------|------|"
     return [header, separator] + lines
@@ -94,6 +108,7 @@ def update_section(start_tag, end_tag, lines):
 def main():
     for platform, tag in PLATFORMS.items():
         problems = parse_problems(platform)
+        problems = sort_problems(problems, by="tier")  # 난이도 순으로 정렬
         table_lines = generate_table(problems, platform)
         end_tag = tag.replace("START", "END")
         update_section(tag, end_tag, table_lines)

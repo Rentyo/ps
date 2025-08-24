@@ -1,71 +1,88 @@
 import os
 import re
+import subprocess
+from datetime import datetime
 
-def generate_baekjoon_table(base_path="백준"):
-    """
-    백준 문제 목록 테이블을 생성합니다.
-    디렉토리 구조: 백준/난이도/문제번호. 문제 이름/문제 이름.java
-    """
-    table = "| 난이도 | 문제 번호 | 문제 이름 | 코드 |\n"
-    table += "|--------|-----------|-----------|------|\n"
+README_FILE = "README.md"
 
-    # 난이도별로 정렬하기 위한 순서 (선택 사항)
-    difficulty_order = ['Diamond', 'Platinum', 'Gold', 'Silver', 'Bronze', 'Unranked']
-    
-    # 난이도 폴더를 찾기 위해 base_path를 탐색
-    difficulties = []
-    if os.path.exists(base_path):
-        difficulties = [d for d in os.listdir(base_path) if os.path.isdir(os.path.join(base_path, d))]
-        # 미리 정의된 순서에 따라 정렬
-        difficulties.sort(key=lambda d: difficulty_order.index(d) if d in difficulty_order else len(difficulty_order))
+PLATFORMS = {
+    "백준": "<!-- BOJ_START -->",
+    "SWEA": "<!-- SWEA_START -->",
+}
 
-    for difficulty in difficulties:
-        difficulty_path = os.path.join(base_path, difficulty)
-        
-        # 문제 폴더를 찾기 위해 난이도 폴더를 탐색
-        problems = []
-        if os.path.exists(difficulty_path):
-            problems = [p for p in os.listdir(difficulty_path) if os.path.isdir(os.path.join(difficulty_path, p))]
-            problems.sort() # 문제 번호 순으로 정렬
+def get_last_commit_date(file_path):
+    """git log를 이용해 마지막 커밋 날짜 가져오기"""
+    try:
+        result = subprocess.run(
+            ["git", "log", "-1", "--format=%cd", "--date=short", file_path],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        return result.stdout.strip()
+    except subprocess.CalledProcessError:
+        return "Unknown"
 
-        for problem_dir in problems:
-            # "문제번호. 문제 이름"에서 문제 번호와 이름 추출
-            match = re.match(r'(\d+)\.\s*(.*)', problem_dir)
+def parse_problems(platform_dir):
+    """폴더 구조를 탐색해서 문제 정보 수집"""
+    problems = []
+    for difficulty in sorted(os.listdir(platform_dir)):
+        diff_path = os.path.join(platform_dir, difficulty)
+        if not os.path.isdir(diff_path):
+            continue
+        for prob_folder in sorted(os.listdir(diff_path)):
+            prob_path = os.path.join(diff_path, prob_folder)
+            if not os.path.isdir(prob_path):
+                continue
+
+            # 폴더명에서 번호와 제목 추출
+            match = re.match(r"(\d+)\.\s*(.+)", prob_folder)
             if match:
-                problem_number = match.group(1)
-                problem_name = match.group(2)
-                
-                # 풀이 파일 경로 생성
-                # 예: 백준/Gold/1000. A+B/A+B.java
-                code_path = os.path.join(difficulty_path, problem_dir, f"{problem_name.replace(' ', '')}.java")
-                
-                # 파일이 실제로 존재하는지 확인
-                if os.path.exists(code_path):
-                    table += f"| {difficulty} | [{problem_number}](https://www.acmicpc.net/problem/{problem_number}) | {problem_name} | [풀이](./{code_path.replace(os.sep, '/')}) |\n"
+                prob_id, title = match.groups()
+            else:
+                prob_id, title = prob_folder, prob_folder
 
-    return table
+            # 마지막 커밋 날짜 가져오기 (폴더 내 README.md 우선)
+            readme_path = os.path.join(prob_path, "README.md")
+            solved_on = get_last_commit_date(readme_path if os.path.exists(readme_path) else prob_path)
 
-def update_readme():
-    with open("README.md", "r", encoding="utf-8") as f:
-        readme_content = f.read()
+            problems.append({
+                "id": prob_id,
+                "title": title,
+                "tier": difficulty,
+                "solved_on": solved_on
+            })
+    return problems
 
-    # 백준 테이블 시작/끝 주석
-    baekjoon_start = ""
-    baekjoon_end = ""
+def update_section(start_tag, end_tag, lines):
+    with open(README_FILE, "r", encoding="utf-8") as f:
+        content = f.read()
+    new_section = start_tag + "\n" + "\n".join(lines) + "\n" + end_tag
+    content = re.sub(f"{start_tag}.*?{end_tag}", new_section, content, flags=re.DOTALL)
+    with open(README_FILE, "w", encoding="utf-8") as f:
+        f.write(content)
 
-    # 테이블 생성
-    baekjoon_table = generate_baekjoon_table()
+def generate_table(problems, platform):
+    """문제 리스트를 마크다운 테이블 형태로 변환"""
+    lines = []
+    for p in problems:
+        if platform == "백준":
+            link = f"https://www.acmicpc.net/problem/{p['id']}"
+        elif platform == "SWEA":
+            link = f"https://swexpertacademy.com/main/code/problem/{p['id']}"  # 실제 SWEA 링크는 필요에 따라 수정
+        else:
+            link = "#"
+        line = f"| [{p['title']}]({link}) | {p['tier']} | {p['solved_on']} | [Link]({link}) |"
+        lines.append(line)
+    return lines
 
-    # README 내용 업데이트
-    new_readme_content = readme_content
-    # 기존 백준 테이블을 새로운 내용으로 교체
-    if baekjoon_start in new_readme_content and baekjoon_end in new_readme_content:
-        start_index = new_readme_content.find(baekjoon_start) + len(baekjoon_start)
-        end_index = new_readme_content.find(baekjoon_end)
-        new_readme_content = new_readme_content[:start_index] + "\n" + baekjoon_table + new_readme_content[end_index:]
-
-    with open("README.md", "w", encoding="utf-8") as f:
-        f.write(new_readme_content)
+def main():
+    for platform, tag in PLATFORMS.items():
+        problems = parse_problems(platform)
+        lines = generate_table(problems, platform)
+        end_tag = tag.replace("START", "END")
+        update_section(tag, end_tag, lines)
+        print(f"✅ {platform} 업데이트 완료! 총 {len(problems)}문제 적용됨.")
 
 if __name__ == "__main__":
-    update_readme()
+    main()

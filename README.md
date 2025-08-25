@@ -35,7 +35,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (19개)</summary>
+<summary>Gold 문제 보기 (20개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -44,6 +44,7 @@
 | 감시 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/15683) |
 | 게리맨더링 | Gold | 2025-08-16 | [Link](https://www.acmicpc.net/problem/17471) |
 | 괄호 추가하기 | Gold | 2025-07-24 | [Link](https://www.acmicpc.net/problem/16637) |
+| 녹색 옷 입은 애가 젤다지？ | Gold | 2025-08-25 | [Link](https://www.acmicpc.net/problem/4485) |
 | 다리 만들기 2 | Gold | 2025-08-19 | [Link](https://www.acmicpc.net/problem/17472) |
 | 달이 차오른다， 가자． | Gold | 2025-08-23 | [Link](https://www.acmicpc.net/problem/1194) |
 | 두 용액 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2470) |

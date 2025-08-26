@@ -85,7 +85,7 @@
 
 <!-- SWEA_START -->
 <details>
-<summary>D4 문제 보기 (5개)</summary>
+<summary>D4 문제 보기 (6개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -94,6 +94,7 @@
 | 창용 마을 무리의 개수 | D4 | 2025-08-26 | [Link](https://swexpertacademy.com/main/code/problem/7465) |
 | ［S／W 문제해결 기본］ 10일차 － Contact | D4 | 2025-08-20 | [Link](https://swexpertacademy.com/main/code/problem/1238) |
 | ［S／W 문제해결 기본］ 7일차 － 미로2 | D4 | 2025-08-23 | [Link](https://swexpertacademy.com/main/code/problem/1227) |
+| ［S／W 문제해결 응용］ 4일차 － 하나로 | D4 | 2025-08-26 | [Link](https://swexpertacademy.com/main/code/problem/1251) |
 </details>
 
 <details>

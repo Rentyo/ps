@@ -10,11 +10,14 @@ PLATFORMS = {
     "SWEA": "<!-- SWEA_START -->"
 }
 
-# 공통 티어 순서
+# 공통 티어 순서 (BOJ)
 COMMON_TIER_ORDER = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Unrated"]
 
-# SWEA 전용 티어 순서 (D1~D6 난이도: D1 < D2 < ... < D6)
+# SWEA 전용 티어 순서
 SWEA_TIER_ORDER = ["D1", "D2", "D3", "D4", "D5", "D6", "Unrated"]
+
+# 프로그래머스 전용 티어 순서 (레벨 0~5)
+PRGM_TIER_ORDER = ["0", "1", "2", "3", "4", "5"]
 
 def get_last_commit_date(file_path):
     """파일 기준 마지막 커밋 날짜 가져오기"""
@@ -65,7 +68,7 @@ def parse_problems(platform_dir, platform_name):
             problems.append({
                 "id": prob_id,
                 "title": title,
-                "tier": difficulty if platform_name=="SWEA" else difficulty,
+                "tier": difficulty,
                 "solved_on": solved_on
             })
     return problems
@@ -74,6 +77,8 @@ def sort_problems(problems, platform=None):
     """난이도 순 + 제목순 정렬"""
     if platform == "SWEA":
         tier_order = {tier:i for i, tier in enumerate(SWEA_TIER_ORDER)}
+    elif platform == "프로그래머스":
+        tier_order = {tier:i for i, tier in enumerate(PRGM_TIER_ORDER)}
     else:
         tier_order = {tier:i for i, tier in enumerate(COMMON_TIER_ORDER)}
     return sorted(problems, key=lambda x: (tier_order.get(x["tier"], 99), x["title"]))
@@ -82,6 +87,8 @@ def generate_table_by_tier(problems, platform):
     """티어별 <details> 토글로 마크다운 테이블 생성"""
     if platform == "SWEA":
         tier_order = SWEA_TIER_ORDER
+    elif platform == "프로그래머스":
+        tier_order = PRGM_TIER_ORDER
     else:
         tier_order = COMMON_TIER_ORDER
 
@@ -121,15 +128,14 @@ def compute_statistics(problems, platform=None):
     """플랫폼별 통계 계산"""
     if platform == "SWEA":
         tiers = SWEA_TIER_ORDER
+    elif platform == "프로그래머스":
+        tiers = PRGM_TIER_ORDER
     else:
         tiers = COMMON_TIER_ORDER
 
     stats = {tier:0 for tier in tiers}
     for p in problems:
-        tier = p["tier"]
-        if platform == "SWEA":
-            tier = tier  # 그대로 사용
-        stats[tier] = stats.get(tier,0)+1
+        stats[p["tier"]] = stats.get(p["tier"],0)+1
     total = len(problems)
     return total, stats
 
@@ -137,7 +143,7 @@ def update_stats_section(boj, prgm, swea):
     lines = ["| Platform | Solved | " + " | ".join(COMMON_TIER_ORDER) + " |",
              "|----------|-------|" + "--------|"*len(COMMON_TIER_ORDER)]
     for platform_name, probs in [("BOJ", boj), ("Programmers", prgm), ("SWEA", swea)]:
-        total, stats = compute_statistics(probs, platform_name if platform_name=="SWEA" else None)
+        total, stats = compute_statistics(probs, platform_name if platform_name=="SWEA" or platform_name=="Programmers" else None)
         tier_counts = " | ".join(str(stats.get(t, 0)) for t in COMMON_TIER_ORDER)
         lines.append(f"| {platform_name} | {total} | {tier_counts} |")
     start_tag = "<!-- STATS_START -->"
@@ -151,7 +157,7 @@ def update_stats_section(boj, prgm, swea):
 
 def main():
     boj_problems = sort_problems(parse_problems("백준", "백준"))
-    prgm_problems = sort_problems(parse_problems("프로그래머스", "프로그래머스"))
+    prgm_problems = sort_problems(parse_problems("프로그래머스", "프로그래머스"), platform="프로그래머스")
     swea_problems = sort_problems(parse_problems("SWEA", "SWEA"), platform="SWEA")
 
     for platform, tag, probs in [("백준","<!-- BOJ_START -->",boj_problems),

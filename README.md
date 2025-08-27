@@ -72,6 +72,13 @@
 <summary>풀이 문제 목록 보기</summary>
 
 <!-- PRGM_START -->
+<details>
+<summary>4 문제 보기 (1개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| ［카카오 인턴］ 동굴 탐험 | 4 | 2025-08-27 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/67260) |
+</details>
 
 <!-- PRGM_END -->
 

@@ -37,7 +37,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (20개)</summary>
+<summary>Gold 문제 보기 (21개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -51,6 +51,7 @@
 | 달이 차오른다， 가자． | Gold | 2025-08-23 | [Link](https://www.acmicpc.net/problem/1194) |
 | 두 용액 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2470) |
 | 말이 되고픈 원숭이 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/1600) |
+| 배열 돌리기 1 | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/16926) |
 | 배열 돌리기 4 | Gold | 2025-08-15 | [Link](https://www.acmicpc.net/problem/17406) |
 | 벽 부수고 이동하기 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/2206) |
 | 벽 부수고 이동하기 2 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/14442) |

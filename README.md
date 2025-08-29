@@ -110,10 +110,11 @@
 </details>
 
 <details>
-<summary>D5 문제 보기 (1개)</summary>
+<summary>D5 문제 보기 (2개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
+| 오！ 나의 여신님 | D5 | 2025-08-29 | [Link](https://swexpertacademy.com/main/code/problem/7793) |
 | 현주가 좋아하는 제곱근 놀이 | D5 | 2025-08-14 | [Link](https://swexpertacademy.com/main/code/problem/6782) |
 </details>
 

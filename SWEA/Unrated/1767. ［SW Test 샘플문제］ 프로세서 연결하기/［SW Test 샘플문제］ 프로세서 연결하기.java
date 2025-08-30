@@ -36,6 +36,7 @@ public class Solution {
                 for(int j = 0 ; j < n; j++){
                     if(Integer.parseInt(st.nextToken()) == 1){
                         map[i][j] = true;
+                        if(i == 0 || j == 0 || i == n-1 || j == n-1) continue;
                         processors.add(new Processor(i, j));
                     }
                 }
@@ -48,6 +49,8 @@ public class Solution {
         System.out.println(sb);
     }
     public static void dfs(int index, int total, int count ){
+        if(processors.size()-index + count < max) return;
+
         if(index == processors.size()){
             if(count > max){
                 max = count;
@@ -59,7 +62,6 @@ public class Solution {
         }
         for(int i = 0; i < 4; i++){
             int[] result = check(index, i);
-            if(result[1] == -1) break;
             if(result[0] != -1){
                 dfs(index +1, total+ result[1],  count + 1);
             }
@@ -83,7 +85,7 @@ public class Solution {
     public static int[] check(int count, int dir){
         int result = 0;
         Processor p = processors.get(count);
-        if(p.row == n-1 || p.col == n-1 || p.row == 0 || p.col == 0) return new int[]{-1, -1};
+        if(p.row == n-1 || p.col == n-1 || p.row == 0 || p.col == 0) return new int[]{-1, 0};
         int row = p.row;
         int col = p.col;
         while(true){

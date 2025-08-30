@@ -37,7 +37,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (22개)</summary>
+<summary>Gold 문제 보기 (23개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -53,6 +53,7 @@
 | 말이 되고픈 원숭이 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/1600) |
 | 미세먼지 안녕！ | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/17144) |
 | 배열 돌리기 1 | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/16926) |
+| 배열 돌리기 2 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/16927) |
 | 배열 돌리기 4 | Gold | 2025-08-15 | [Link](https://www.acmicpc.net/problem/17406) |
 | 벽 부수고 이동하기 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/2206) |
 | 벽 부수고 이동하기 2 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/14442) |

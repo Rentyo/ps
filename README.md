@@ -128,10 +128,11 @@
 </details>
 
 <details>
-<summary>Unrated 문제 보기 (4개)</summary>
+<summary>Unrated 문제 보기 (5개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
+| ［SW Test 샘플문제］ 프로세서 연결하기 | Unrated | 2025-08-30 | [Link](https://swexpertacademy.com/main/code/problem/1767) |
 | ［모의 SW 역량테스트］ 등산로 조성 | Unrated | 2025-08-26 | [Link](https://swexpertacademy.com/main/code/problem/1949) |
 | ［모의 SW 역량테스트］ 디저트 카페 | Unrated | 2025-08-21 | [Link](https://swexpertacademy.com/main/code/problem/2105) |
 | ［모의 SW 역량테스트］ 미생물 격리 | Unrated | 2025-08-27 | [Link](https://swexpertacademy.com/main/code/problem/2382) |

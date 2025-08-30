@@ -3,7 +3,6 @@ import java.util.*;
 public class Solution {
     static class Processor{
         int col, row;
-        boolean connected;
         public Processor(int row, int col){
             this.col = col;
             this.row = row;
@@ -18,7 +17,6 @@ public class Solution {
     static int n;
     static boolean[][] map;
     static ArrayList<Processor> processors;
-    static Stack<int[]>[] stack;
     // 프로세서의 최대 크기
     static int max ;
     // 선의 최소 길이
@@ -42,10 +40,6 @@ public class Solution {
                     }
                 }
             }
-            stack = new Stack[processors.size()];
-            for(int i = 0; i < processors.size(); i++){
-                stack[i] = new Stack<>();
-            }
             max = 0;
             min = Integer.MAX_VALUE;
             dfs(0, 0, 0);
@@ -64,37 +58,42 @@ public class Solution {
             return;
         }
         for(int i = 0; i < 4; i++){
-            int length = check(index, i);
-            if(length != -1){
-                dfs(index +1, total+ length,  count + 1);
+            int[] result = check(index, i);
+            if(result[1] == -1) break;
+            if(result[0] != -1){
+                dfs(index +1, total+ result[1],  count + 1);
             }
-            restore(index);
+            restore(index, i, result[1]);
         }
         dfs(index+1, total, count);
-        restore(index);
     }
-    public static void restore(int count){
-        while(stack[count].size() > 0){
-            int[] cur = stack[count].pop();
-            map[cur[0]][cur[1]] = false;
+    public static void restore(int index, int dir, int length){
+        if(length == -1)
+            return;
+        Processor cur = processors.get(index);
+        int row = cur.row;
+        int col = cur.col;
+        for(int i = 0; i < length; i++){
+            row += d[dir][0];
+            col += d[dir][1];
+            map[row][col] = false;
         }
+
     }
-    public static int check(int count, int dir){
+    public static int[] check(int count, int dir){
         int result = 0;
         Processor p = processors.get(count);
-        if(p.row == n-1 || p.col == n-1 || p.row == 0 || p.col == 0) return -1;
+        if(p.row == n-1 || p.col == n-1 || p.row == 0 || p.col == 0) return new int[]{-1, -1};
         int row = p.row;
         int col = p.col;
         while(true){
             row +=d[dir][0];
             col +=d[dir][1];
             if(row < 0 || col < 0 || row >= n || col >= n) break;
-            if(map[row][col]) return -1;
-
-            stack[count].push(new int[]{row, col});
+            if(map[row][col]) return new int[]{-1, result};
             map[row][col] = true;
             result++;
         }
-        return result;
+        return new int[]{0, result};
     }
 }

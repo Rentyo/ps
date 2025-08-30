@@ -61,7 +61,7 @@
 | 알파벳 | Gold | 2025-07-20 | [Link](https://www.acmicpc.net/problem/1987) |
 | 연구소 3 | Gold | 2025-08-14 | [Link](https://www.acmicpc.net/problem/17142) |
 | 줄 세우기 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2252) |
-| 캐슬 디펜스 | Gold | 2025-08-03 | [Link](https://www.acmicpc.net/problem/17135) |
+| 캐슬 디펜스 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/17135) |
 | 파이프 옮기기 1 | Gold | 2025-07-26 | [Link](https://www.acmicpc.net/problem/17070) |
 | 행렬 제곱 | Gold | 2025-08-06 | [Link](https://www.acmicpc.net/problem/10830) |
 </details>

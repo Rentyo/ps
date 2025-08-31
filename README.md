@@ -129,7 +129,7 @@
 </details>
 
 <details>
-<summary>Unrated 문제 보기 (5개)</summary>
+<summary>Unrated 문제 보기 (6개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -137,6 +137,7 @@
 | ［모의 SW 역량테스트］ 등산로 조성 | Unrated | 2025-08-26 | [Link](https://swexpertacademy.com/main/code/problem/1949) |
 | ［모의 SW 역량테스트］ 디저트 카페 | Unrated | 2025-08-21 | [Link](https://swexpertacademy.com/main/code/problem/2105) |
 | ［모의 SW 역량테스트］ 미생물 격리 | Unrated | 2025-08-27 | [Link](https://swexpertacademy.com/main/code/problem/2382) |
+| ［모의 SW 역량테스트］ 벽돌 깨기 | Unrated | 2025-08-31 | [Link](https://swexpertacademy.com/main/code/problem/5656) |
 | ［모의 SW 역량테스트］ 특이한 자석 | Unrated | 2025-08-29 | [Link](https://swexpertacademy.com/main/code/problem/4013) |
 </details>
 

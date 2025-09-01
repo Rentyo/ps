@@ -11,7 +11,7 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Silver 문제 보기 (19개)</summary>
+<summary>Silver 문제 보기 (20개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -24,6 +24,7 @@
 | 봄버맨 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/16918) |
 | 부분수열의 합 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/1182) |
 | 상근이의 여행 | Silver | 2025-08-11 | [Link](https://www.acmicpc.net/problem/9372) |
+| 색종이 만들기 | Silver | 2025-09-01 | [Link](https://www.acmicpc.net/problem/2630) |
 | 섬의 개수 | Silver | 2025-08-06 | [Link](https://www.acmicpc.net/problem/4963) |
 | 순열 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/9742) |
 | 스타트링크 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/5014) |

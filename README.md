@@ -38,7 +38,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (26개)</summary>
+<summary>Gold 문제 보기 (27개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -50,6 +50,7 @@
 | 녹색 옷 입은 애가 젤다지？ | Gold | 2025-08-25 | [Link](https://www.acmicpc.net/problem/4485) |
 | 다리 만들기 2 | Gold | 2025-08-19 | [Link](https://www.acmicpc.net/problem/17472) |
 | 달이 차오른다， 가자． | Gold | 2025-08-23 | [Link](https://www.acmicpc.net/problem/1194) |
+| 동전 2 | Gold | 2025-09-07 | [Link](https://www.acmicpc.net/problem/2294) |
 | 두 용액 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2470) |
 | 말이 되고픈 원숭이 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/1600) |
 | 미세먼지 안녕！ | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/17144) |

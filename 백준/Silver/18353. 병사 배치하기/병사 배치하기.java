@@ -1,25 +1,47 @@
 import java.io.*;
 import java.util.*;
 public class Main {
+    static ArrayList<Integer> dp;
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int[] dp = new int[n];
-        Arrays.fill(dp, 1);
         int[] arr = new int[n];
-        for(int i = 0; i < n; i++){
+        dp = new ArrayList<Integer>();
+        for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-        int max = 1;
+        dp.add(arr[0]);
+
         for(int i = 1; i < n; i++){
-            for(int j = i-1; j >= 0; j--){
-                if(arr[i] < arr[j]){
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
-                }
-                max = Math.max(max, dp[i]);
+            if(arr[i] < dp.get(dp.size()-1)){
+                dp.add(arr[i]);
+            }else if(arr[i] > dp.get(dp.size()-1)){
+                int index = binarySearch(arr[i]);
+                dp.remove(index);
+                dp.add(index, arr[i]);
             }
         }
-        System.out.println(n - max);
+
+        System.out.println(n - dp.size());
+
+
+    }
+    static int binarySearch(int target){
+        int low = 0;
+        int high = dp.size()-1;
+
+        while(low <= high){
+            int mid = low + (high - low)/2;
+
+            if(dp.get(mid) > target){
+                low = mid + 1;
+            }else{
+                high = mid -1;
+            }
+        }
+
+        return low;
+
     }
 }

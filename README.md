@@ -11,7 +11,7 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Silver 문제 보기 (20개)</summary>
+<summary>Silver 문제 보기 (21개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -19,6 +19,7 @@
 | 그림 | Silver | 2025-08-27 | [Link](https://www.acmicpc.net/problem/1926) |
 | 나이트의 이동 | Silver | 2025-08-28 | [Link](https://www.acmicpc.net/problem/7562) |
 | 도영이가 만든 맛있는 음식 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/2961) |
+| 동물원 | Silver | 2025-09-07 | [Link](https://www.acmicpc.net/problem/1309) |
 | 미로 탐색 | Silver | 2025-07-21 | [Link](https://www.acmicpc.net/problem/2178) |
 | 바이러스 | Silver | 2025-07-22 | [Link](https://www.acmicpc.net/problem/2606) |
 | 봄버맨 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/16918) |

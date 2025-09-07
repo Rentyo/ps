@@ -11,7 +11,7 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Silver 문제 보기 (21개)</summary>
+<summary>Silver 문제 보기 (22개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -22,6 +22,7 @@
 | 동물원 | Silver | 2025-09-07 | [Link](https://www.acmicpc.net/problem/1309) |
 | 미로 탐색 | Silver | 2025-07-21 | [Link](https://www.acmicpc.net/problem/2178) |
 | 바이러스 | Silver | 2025-07-22 | [Link](https://www.acmicpc.net/problem/2606) |
+| 병사 배치하기 | Silver | 2025-09-07 | [Link](https://www.acmicpc.net/problem/18353) |
 | 봄버맨 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/16918) |
 | 부분수열의 합 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/1182) |
 | 상근이의 여행 | Silver | 2025-08-11 | [Link](https://www.acmicpc.net/problem/9372) |

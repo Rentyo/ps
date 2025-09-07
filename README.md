@@ -84,6 +84,14 @@
 
 <!-- PRGM_START -->
 <details>
+<summary>3 문제 보기 (1개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| 정수 삼각형 | 3 | 2025-09-07 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/43105) |
+</details>
+
+<details>
 <summary>4 문제 보기 (1개)</summary>
 
 | Problem | Tier | Solved On | Link |

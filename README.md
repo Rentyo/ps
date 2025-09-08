@@ -11,11 +11,12 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Silver 문제 보기 (24개)</summary>
+<summary>Silver 문제 보기 (25개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 1， 2， 3 더하기 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/9095) |
+| 2×n 타일링 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/11726) |
 | 결혼식 | Silver | 2025-08-06 | [Link](https://www.acmicpc.net/problem/5567) |
 | 계단 오르기 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/2579) |
 | 그림 | Silver | 2025-08-27 | [Link](https://www.acmicpc.net/problem/1926) |

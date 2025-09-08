@@ -2,8 +2,6 @@ import java.util.*;
 import java.io.*;
 class Main
 {   
-    static int[] volumes;
-    static int[] values;
     static int[][] dp;
 	public static void main(String args[]) throws Exception
 	{

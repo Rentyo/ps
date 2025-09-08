@@ -113,6 +113,14 @@
 
 <!-- SWEA_START -->
 <details>
+<summary>D3 문제 보기 (1개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| 0／1 Knapsack | D3 | 2025-09-08 | [Link](https://swexpertacademy.com/main/code/problem/3282) |
+</details>
+
+<details>
 <summary>D4 문제 보기 (7개)</summary>
 
 | Problem | Tier | Solved On | Link |

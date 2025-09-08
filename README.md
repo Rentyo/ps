@@ -11,12 +11,13 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Silver 문제 보기 (23개)</summary>
+<summary>Silver 문제 보기 (24개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 1， 2， 3 더하기 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/9095) |
 | 결혼식 | Silver | 2025-08-06 | [Link](https://www.acmicpc.net/problem/5567) |
+| 계단 오르기 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/2579) |
 | 그림 | Silver | 2025-08-27 | [Link](https://www.acmicpc.net/problem/1926) |
 | 나이트의 이동 | Silver | 2025-08-28 | [Link](https://www.acmicpc.net/problem/7562) |
 | 도영이가 만든 맛있는 음식 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/2961) |

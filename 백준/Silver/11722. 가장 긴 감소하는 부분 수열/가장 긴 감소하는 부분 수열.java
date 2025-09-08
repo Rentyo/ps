@@ -2,6 +2,7 @@ import java.util.*;
 import java.io.*;
 class Main
 {   
+    static ArrayList<Integer> dp;
 	public static void main(String args[]) throws Exception
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -11,19 +12,31 @@ class Main
         for(int i = 0 ; i < n; i++){
             arr[i] = Integer.parseInt(st.nextToken());
         }
-        int[] dp = new int[n];
-        int max = 1;
-        dp[0] = 1;
-        for(int i = 1; i < n; i++){
-            dp[i] = 1;
-            for(int j = 0; j < i; j++){
-                if(arr[j] > arr[i]){
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
-                }
+        dp = new ArrayList<>();
+        dp.add(arr[0]);
+        for(int i = 1; i < n ; i++){
+            if(dp.get(dp.size()-1) > arr[i]){
+                dp.add(arr[i]);
+            }else{
+                int index = binary_search(arr[i]);
+                dp.remove(index);
+                dp.add(index, arr[i]);
             }
-            max = Math.max(max, dp[i]);
         }
+        System.out.println(dp.size());
 
-        System.out.println(max);
 	}
+    static int binary_search(int target){
+        int start = 0;
+        int end = dp.size()-1;
+
+        while(start <= end){
+            int mid = start + (end-start)/2;
+
+            if(dp.get(mid) > target) start = mid+1;
+            else if(dp.get(mid) < target) end = mid-1;
+            else return mid;
+        }
+        return start;
+    }
 }

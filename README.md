@@ -11,7 +11,7 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Silver 문제 보기 (26개)</summary>
+<summary>Silver 문제 보기 (27개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -39,6 +39,7 @@
 | 영일랜드 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/31871) |
 | 자리배정 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/10157) |
 | 차이를 최대로 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/10819) |
+| 퇴사 | Silver | 2025-09-09 | [Link](https://www.acmicpc.net/problem/14501) |
 | 특정 거리의 도시 찾기 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/18352) |
 | 효율적인 해킹 | Silver | 2025-08-07 | [Link](https://www.acmicpc.net/problem/1325) |
 </details>

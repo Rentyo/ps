@@ -116,11 +116,12 @@
 
 <!-- SWEA_START -->
 <details>
-<summary>D3 문제 보기 (1개)</summary>
+<summary>D3 문제 보기 (2개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 0／1 Knapsack | D3 | 2025-09-08 | [Link](https://swexpertacademy.com/main/code/problem/3282) |
+| 최장 증가 부분 수열 | D3 | 2025-09-09 | [Link](https://swexpertacademy.com/main/code/problem/3307) |
 </details>
 
 <details>

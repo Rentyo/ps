@@ -152,11 +152,12 @@
 </details>
 
 <details>
-<summary>D6 문제 보기 (1개)</summary>
+<summary>D6 문제 보기 (2개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | ［S／W 문제해결 응용］ 10일차 － 작업순서 | D6 | 2025-08-23 | [Link](https://swexpertacademy.com/main/code/problem/1267) |
+| ［S／W 문제해결 응용］ 8일차 － 사람 네트워크2 | D6 | 2025-09-10 | [Link](https://swexpertacademy.com/main/code/problem/1263) |
 </details>
 
 <details>

@@ -5,7 +5,6 @@ class Solution
 {
     static final int maxValue = Integer.MAX_VALUE;
     public static void main(String[] args) throws IOException {
-        File file = new File("hamburger\\src\\input.txt");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
          StringTokenizer st;

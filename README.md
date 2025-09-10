@@ -45,7 +45,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (29개)</summary>
+<summary>Gold 문제 보기 (30개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -74,6 +74,7 @@
 | 연구소 3 | Gold | 2025-08-14 | [Link](https://www.acmicpc.net/problem/17142) |
 | 줄 세우기 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2252) |
 | 캐슬 디펜스 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/17135) |
+| 토마토 | Gold | 2025-09-10 | [Link](https://www.acmicpc.net/problem/7576) |
 | 퇴사 2 | Gold | 2025-09-09 | [Link](https://www.acmicpc.net/problem/15486) |
 | 파이프 옮기기 1 | Gold | 2025-07-26 | [Link](https://www.acmicpc.net/problem/17070) |
 | 플로이드 | Gold | 2025-09-04 | [Link](https://www.acmicpc.net/problem/11404) |

@@ -3,7 +3,7 @@ import java.io.*;
 
 class Solution
 {
-    static final int maxValue = 2000;
+    static final int maxValue = Integer.MAX_VALUE;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
@@ -13,42 +13,38 @@ class Solution
             sb.append("#").append(tc).append(" ");
             st = new StringTokenizer(br.readLine());
             int n = Integer.parseInt(st.nextToken());
-            int[][] dp = new int[n][n];
+            ArrayList<Integer>[] arr = new ArrayList[n];
             for(int i = 0; i < n; i++){
+                arr[i] = new ArrayList<>();
                 for(int j = 0; j < n; j++){
-                    int now = Integer.parseInt(st.nextToken());
-                    if(i == j) dp[i][j] = 0;
-                    else{
-                        if(now == 1) dp[i][j] = 1;
-                        else dp[i][j] = maxValue;
-                    }
+                    int num = Integer.parseInt(st.nextToken());
+                    if(num == 0) continue;
+                    arr[i].add(j);
                 }
             }
-
-            for(int i = 0; i < n; i++){
-                for(int j = 0; j < n; j++){
-                    for(int k = 0; k < n; k++){
-                        if(dp[i][k] == maxValue || dp[k][j] == maxValue) continue;
-                        dp[i][j] = Math.min(dp[i][j], dp[i][k] + dp[k][j]);
-                    }
-                }
-            }
+            Queue<int[]> queue = new ArrayDeque<>();
+            Set<Integer> v = new HashSet<>();
             int min = maxValue;
             for(int i = 0; i < n; i++){
-                boolean check = false;
+                v.clear();
                 int sum = 0;
-                for(int j = 0; j < n; j++){
-                    sum += dp[i][j];
-                    if(dp[i][j] == maxValue){
-                        check = true;
-                        break;
+                queue.offer(new int[]{i, 0});
+                v.add(i);
+                while(queue.size() > 0){
+                    int[] cur = queue.poll();
+                    for(int j = 0; j < arr[cur[0]].size(); j++){
+                        int next = arr[cur[0]].get(j);
+                        if(v.contains(next)) continue;
+                        v.add(next);
+                        queue.offer(new int[]{next, cur[1] + 1});
+                        sum+= cur[1] + 1;
                     }
                 }
-                if(check) continue;
-                min = Math.min(min, sum);
+                if(v.size() == n) min = Math.min(sum, min);
             }
             sb.append(min).append("\n");
         }
+        br.close();
         System.out.println(sb);
     }
 }

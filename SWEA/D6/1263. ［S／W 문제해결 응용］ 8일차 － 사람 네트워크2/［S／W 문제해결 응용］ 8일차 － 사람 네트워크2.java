@@ -28,7 +28,7 @@ class Solution
                 for(int j = 0; j < n; j++){
                     if(dp[j][i] == maxValue) continue;
                     for(int k = 0; k < n; k++){
-                        if(dp[i][k] == maxValue) continue;
+                        if(dp[i][k] == maxValue || j == k) continue;
                         dp[j][k] = Math.min(dp[j][k], dp[j][i] + dp[i][k]);
                     }
                 }

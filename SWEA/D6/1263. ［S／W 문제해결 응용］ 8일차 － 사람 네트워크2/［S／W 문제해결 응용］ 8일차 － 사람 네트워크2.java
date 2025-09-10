@@ -22,12 +22,8 @@ class Solution
             }
             for(int mid = 0; mid < n; mid++){
                 for(int start = 0; start < n; start++){
-                    if(mid == start) continue;
                     for(int end = 0; end < n; end++){
-                        if(start == end || end == mid) continue;
-                        if(dp[start][end] > dp[start][mid] + dp[mid][end]){
-                            dp[start][end] = dp[start][mid] + dp[mid][end];
-                        }
+                        dp[start][end] = Math.min(dp[start][end], dp[start][mid] + dp[mid][end]);
                     }
                 }
             }

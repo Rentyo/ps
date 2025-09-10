@@ -17,8 +17,7 @@ class Solution
             for(int i = 0; i < n; i++){
                 for(int j = 0; j < n; j++){
                     int now = Integer.parseInt(st.nextToken());
-                    if(i == j) dp[i][j] = 0;
-                    else{
+                    if(i != j){
                         if(now == 1) dp[i][j] = 1;
                         else dp[i][j] = maxValue;
                     }
@@ -29,7 +28,7 @@ class Solution
                 for(int j = 0; j < n; j++){
                     if(dp[j][i] == maxValue) continue;
                     for(int k = 0; k < n; k++){
-                        if(dp[k][i] == maxValue) continue;
+                        if(dp[i][k] == maxValue) continue;
                         dp[j][k] = Math.min(dp[j][k], dp[j][i] + dp[i][k]);
                     }
                 }
@@ -39,14 +38,13 @@ class Solution
                 boolean check = false;
                 int sum = 0;
                 for(int j = 0; j < n; j++){
-                    sum += dp[i][j];
                     if(dp[i][j] == maxValue){
                         check = true;
                         break;
                     }
+                    sum += dp[i][j];
                 }
-                if(check) continue;
-                min = Math.min(min, sum);
+                if(!check) min = Math.min(min, sum);
             }
             sb.append(min).append("\n");
         }

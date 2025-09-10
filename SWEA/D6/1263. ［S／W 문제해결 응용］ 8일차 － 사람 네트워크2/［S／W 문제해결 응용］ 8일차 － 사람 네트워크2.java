@@ -3,7 +3,7 @@ import java.io.*;
 
 class Solution
 {
-    static final int maxValue = Integer.MAX_VALUE;
+    static final int maxValue = 2000;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());

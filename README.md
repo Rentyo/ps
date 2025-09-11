@@ -81,6 +81,14 @@
 | 행렬 제곱 | Gold | 2025-08-06 | [Link](https://www.acmicpc.net/problem/10830) |
 </details>
 
+<details>
+<summary>Platinum 문제 보기 (1개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| 행성 터널 | Platinum | 2025-09-11 | [Link](https://www.acmicpc.net/problem/2887) |
+</details>
+
 <!-- BOJ_END -->
 
 </details>

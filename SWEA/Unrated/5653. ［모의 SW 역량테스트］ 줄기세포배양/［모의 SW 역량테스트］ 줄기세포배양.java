@@ -8,12 +8,20 @@ public class Solution {
         {0, -1}
     };
 
-    static class Cell {
+    static class Cell implements Comparable<Cell>{
+        int row;
+        int col;
         int life;
         int now;
-        public Cell(int life){
+        public Cell(int row, int col, int life){
+            this.row = row;
+            this.col = col;
             this.life = life;
             this.now = 0;
+        }
+        @Override
+        public int compareTo(Cell o){
+            return -1*Integer.compare(this.life, o.life);
         }
     }
     static HashMap<Integer, Cell> noActive;
@@ -41,7 +49,7 @@ public class Solution {
                 for(int j = 500; j < 500 + inputcol; j++){
                     int life = Integer.parseInt(st.nextToken());
                     if(life > 0){
-                        noActive.put(size*i + j, new Cell(life));
+                        noActive.put(size*i + j, new Cell(i, j,life));
                     }
                 }
             }
@@ -60,34 +68,35 @@ public class Solution {
                     delqueue.offer(entry.getKey());
                 } 
             }
+            PriorityQueue<Cell> pq = new PriorityQueue<>();
             while(delqueue.size() > 0) noActive.remove(delqueue.poll());
-             for(Map.Entry<Integer, Cell> entry : Active.entrySet()){
+            for(Map.Entry<Integer, Cell> entry : Active.entrySet()){
                 if(++entry.getValue().now == entry.getValue().life){
                     Dead.add(entry.getKey());
                     delqueue.offer(entry.getKey());
                 }
                 
                 if(entry.getValue().now == 1){
-                    int R = entry.getKey() / size;
-                    int C = entry.getKey() % size;
+                    int R = entry.getValue().row;
+                    int C = entry.getValue().col;
 
                     for(int j = 0; j < 4; j++){
                         int nR = R + d[j][0];
                         int nC = C + d[j][1];
                         int key = nR * size + nC;
                         if(nR < 0 || nC < 0 || nR >= size || nC >= size) continue;
-                        if(Active.containsKey(key) || Dead.contains(key)) continue;
-                        if(noActive.containsKey(key)){
-                            if(noActive.get(key).now == 0 && noActive.get(key).life < entry.getValue().life){
-                                noActive.get(key).life = entry.getValue().life;
-                            }
-                        }else{
-                            noActive.put(key, new Cell(entry.getValue().life));
-                        }
+                        if(Active.containsKey(key) || Dead.contains(key) || noActive.containsKey(key)) continue;
+                        pq.offer(new Cell(nR, nC,entry.getValue().life));
                     }
                 }
             }
             while(delqueue.size() > 0) Active.remove(delqueue.poll());
+            while(pq.size() > 0){
+                Cell cur = pq.poll();
+                int key = cur.col + cur.row*size;
+                if(noActive.containsKey(key)) continue;
+                noActive.put(key, cur);
+            }
         }
     }
 }

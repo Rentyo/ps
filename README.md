@@ -162,7 +162,7 @@
 </details>
 
 <details>
-<summary>Unrated 문제 보기 (8개)</summary>
+<summary>Unrated 문제 보기 (9개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -172,6 +172,7 @@
 | ［모의 SW 역량테스트］ 미생물 격리 | Unrated | 2025-08-27 | [Link](https://swexpertacademy.com/main/code/problem/2382) |
 | ［모의 SW 역량테스트］ 벽돌 깨기 | Unrated | 2025-08-31 | [Link](https://swexpertacademy.com/main/code/problem/5656) |
 | ［모의 SW 역량테스트］ 보호 필름 | Unrated | 2025-09-07 | [Link](https://swexpertacademy.com/main/code/problem/2112) |
+| ［모의 SW 역량테스트］ 점심 식사시간 | Unrated | 2025-09-11 | [Link](https://swexpertacademy.com/main/code/problem/2383) |
 | ［모의 SW 역량테스트］ 차량 정비소 | Unrated | 2025-09-05 | [Link](https://swexpertacademy.com/main/code/problem/2477) |
 | ［모의 SW 역량테스트］ 특이한 자석 | Unrated | 2025-08-29 | [Link](https://swexpertacademy.com/main/code/problem/4013) |
 </details>

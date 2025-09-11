@@ -84,7 +84,6 @@ public class Solution {
                         int nR = R + d[j][0];
                         int nC = C + d[j][1];
                         int key = nR * size + nC;
-                        if(nR < 0 || nC < 0 || nR >= size || nC >= size) continue;
                         if(Active.containsKey(key) || Dead.contains(key) || noActive.containsKey(key)) continue;
                         pq.offer(new Cell(nR, nC,entry.getValue().life));
                     }

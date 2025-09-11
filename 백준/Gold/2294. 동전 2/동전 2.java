@@ -1,5 +1,3 @@
-
-
 import java.io.*;
 import java.util.*;
 
@@ -16,10 +14,9 @@ public class Main {
         for(int i = 0; i < n; i++){
             coins[i] = Integer.parseInt(br.readLine());
         }
-        Arrays.sort(coins);
         for(int i = 1; i <= k; i++){
             for(int j = 0; j < n; j++){
-                if(i - coins[j] < 0) break;
+                if(i - coins[j] < 0) continue;
                 dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
             }
         }

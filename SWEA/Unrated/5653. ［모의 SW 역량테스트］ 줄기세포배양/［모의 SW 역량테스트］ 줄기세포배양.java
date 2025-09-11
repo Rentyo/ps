@@ -21,7 +21,7 @@ public class Solution {
         }
         @Override
         public int compareTo(Cell o){
-            return -1*Integer.compare(this.life, o.life);
+            return Integer.compare(this.life, o.life);
         }
     }
     static HashMap<Integer, Cell> noActive;
@@ -93,7 +93,6 @@ public class Solution {
             while(pq.size() > 0){
                 Cell cur = pq.poll();
                 int key = cur.col + cur.row*size;
-                if(noActive.containsKey(key)) continue;
                 noActive.put(key, cur);
             }
         }

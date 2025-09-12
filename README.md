@@ -89,6 +89,14 @@
 | 행성 터널 | Platinum | 2025-09-11 | [Link](https://www.acmicpc.net/problem/2887) |
 </details>
 
+<details>
+<summary>Unrated 문제 보기 (1개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| 구구 | Unrated | 2025-09-12 | [Link](https://www.acmicpc.net/problem/9999) |
+</details>
+
 <!-- BOJ_END -->
 
 </details>

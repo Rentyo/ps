@@ -36,6 +36,7 @@ class Solution
         System.out.print(sb);
     }
     public static void comb(int count, int index, long sumX, long sumY){
+        if(count > n/2 || n - index + count < n/2) return;
         if(count == n/2){
             long restX = totalX - sumX;
             long restY = totalY - sumY;

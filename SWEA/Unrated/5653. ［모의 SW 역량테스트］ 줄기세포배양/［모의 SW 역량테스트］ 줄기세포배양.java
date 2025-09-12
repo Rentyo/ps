@@ -24,7 +24,7 @@ public class Solution {
             return -1*Integer.compare(this.life, o.life);
         }
     }
-    static HashMap<Integer, Cell> cells;
+    static Queue<Cell> cells;
     static int[][] map;
     static int size;
     public static void main(String[] args) throws IOException{
@@ -40,13 +40,13 @@ public class Solution {
             int inputrow = Integer.parseInt(st.nextToken());
             int inputcol = Integer.parseInt(st.nextToken());
             int time = Integer.parseInt(st.nextToken());
-            cells = new HashMap<>();
+            cells = new ArrayDeque<Cell>();
             for(int i = 500 ; i < 500 + inputrow; i++){
                 st = new StringTokenizer(br.readLine());
                 for(int j = 500; j < 500 + inputcol; j++){
                     map[i][j] = Integer.parseInt(st.nextToken());
                     if(map[i][j] > 0){
-                        cells.put(size*i + j, new Cell(i, j, map[i][j]));
+                        cells.offer(new Cell(i, j, map[i][j]));
                         map[i][j] = 1;
                     }
                 }
@@ -58,10 +58,10 @@ public class Solution {
     }
     static void simulate(int time){
         PriorityQueue<Cell> pq = new PriorityQueue<>();
+        Queue<Cell> temp = new ArrayDeque<>();
         for(int i = 1; i <= time; i++){
-            Queue<Integer> delqueue = new ArrayDeque<>();
-            for(Map.Entry<Integer, Cell> entry : cells.entrySet()){
-                Cell cur = entry.getValue(); 
+            while(cells.size() > 0){
+                Cell cur = cells.poll(); 
                 cur.now++;
                 if(cur.now == 1 && map[cur.row][cur.col] == 2){
                     for(int j = 0; j < 4; j++){
@@ -71,21 +71,19 @@ public class Solution {
                         pq.offer(new Cell(nR, nC, cur.life));
                     }
                 }
-
                 if(cur.now == cur.life){
                     cur.now = 0;
                     map[cur.row][cur.col]++;
-                    if(map[cur.row][cur.col] == 3) delqueue.offer(cur.row*size+cur.col);
                 }
+                if(map[cur.row][cur.col] != 3) temp.offer(cur);
             }
             while(pq.size() > 0){
                 Cell cur = pq.poll();
-                int key = cur.col + cur.row*size;
                 if(map[cur.row][cur.col] > 0) continue;
-                cells.put(key, cur);
+                cells.offer(cur);
                 map[cur.row][cur.col] = 1;
             }
-            while(delqueue.size() > 0) cells.remove(delqueue.poll());
+            while(temp.size() > 0) cells.offer(temp.poll());
         }
     }
 }

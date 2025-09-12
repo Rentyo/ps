@@ -179,7 +179,7 @@
 </details>
 
 <details>
-<summary>Unrated 문제 보기 (10개)</summary>
+<summary>Unrated 문제 보기 (11개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -193,6 +193,7 @@
 | ［모의 SW 역량테스트］ 줄기세포배양 | Unrated | 2025-09-12 | [Link](https://swexpertacademy.com/main/code/problem/5653) |
 | ［모의 SW 역량테스트］ 차량 정비소 | Unrated | 2025-09-05 | [Link](https://swexpertacademy.com/main/code/problem/2477) |
 | ［모의 SW 역량테스트］ 특이한 자석 | Unrated | 2025-08-29 | [Link](https://swexpertacademy.com/main/code/problem/4013) |
+| ［모의 SW 역량테스트］ 홈 방범 서비스 | Unrated | 2025-09-12 | [Link](https://swexpertacademy.com/main/code/problem/2117) |
 </details>
 
 <!-- SWEA_END -->

@@ -145,10 +145,11 @@
 </details>
 
 <details>
-<summary>D4 문제 보기 (7개)</summary>
+<summary>D4 문제 보기 (8개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
+| 사랑의 카운슬러 | D4 | 2025-09-12 | [Link](https://swexpertacademy.com/main/code/problem/1494) |
 | 서로소 집합 | D4 | 2025-08-26 | [Link](https://swexpertacademy.com/main/code/problem/3289) |
 | 수영대회 결승전 （ 완전 탐색 ＋ 구현 ） | D4 | 2025-08-20 | [Link](https://swexpertacademy.com/main/code/problem/4193) |
 | 창용 마을 무리의 개수 | D4 | 2025-08-26 | [Link](https://swexpertacademy.com/main/code/problem/7465) |

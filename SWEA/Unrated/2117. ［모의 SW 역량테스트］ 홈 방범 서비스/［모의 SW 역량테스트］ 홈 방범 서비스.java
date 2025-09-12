@@ -13,8 +13,7 @@ class Solution
         // 오른 위
         {-1, 1}
     };
-    static int[][] map;
-    static ArrayList<int[][]> dp;
+    static int[][][] dp;
     static int max;
     // 격자판의 크기
     static int n;
@@ -34,26 +33,22 @@ class Solution
             st = new StringTokenizer(br.readLine());
             n = Integer.parseInt(st.nextToken());
             m = Integer.parseInt(st.nextToken());
-            dp = new ArrayList<>();
-            dp.add(new int[n][n]);
-            map = new int[n][n];
+            dp = new int[n+2][n][n];
             for(int i = 0; i < n; i++){
                 st = new StringTokenizer(br.readLine());
                 for(int j = 0; j < n; j++){
-                    map[i][j] =Integer.parseInt(st.nextToken());
-                    dp.get(0)[i][j] = map[i][j];
+                    dp[0][i][j] =Integer.parseInt(st.nextToken());
                 }
             }
             max = 1;
             int value = 1;
             for(int i = 2; i <= n+1; i++){
                 value += 4*(i-1);
-                dp.add(new int[n][n]);
                 for(int j = 0; j < n; j++){
                     for(int k = 0; k < n; k++){
                         simulate(j, k , i);
-                        if(dp.get(i-1)[j][k]*m >= value){
-                            max = Math.max(dp.get(i-1)[j][k] , max);
+                        if(dp[i-1][j][k]*m >= value){
+                            max = Math.max(dp[i-1][j][k] , max);
                         } 
                     }
                 }
@@ -72,11 +67,11 @@ class Solution
                 startRow += d[i][0];
                 startCol += d[i][1];
                 if(startRow < 0 || startRow >= n || startCol < 0 || startCol >=n) continue;
-                count += map[startRow][startCol];
+                count += dp[0][startRow][startCol];
             }
         }
 
-        dp.get(size-1)[row][col] = dp.get(size-2)[row][col] + count;
+        dp[size-1][row][col] = dp[size-2][row][col] + count;
 
     }
 }

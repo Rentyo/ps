@@ -3,8 +3,7 @@ import java.io.*;
  
 class Solution
 {   
-
-    static boolean[][] edges;
+    static int[][] dp;
     public static void main(String args[]) throws Exception
     {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -17,49 +16,37 @@ class Solution
             sb.append("#").append(test_case).append(" ");
             int n = Integer.parseInt(br.readLine());
             int m = Integer.parseInt(br.readLine());
-            edges = new boolean[n][n];
+            dp = new int[n][n];
+            for(int i = 0; i < n; i++){
+                for(int j = 0;j < n; j++){
+                    if(i == j) dp[i][j] = 0;
+                    else dp[i][j] = 501;
+                }
+            }
             for(int i = 0; i < m; i++){
                 st = new StringTokenizer(br.readLine());
                 int start = Integer.parseInt(st.nextToken())-1;
                 int end = Integer.parseInt(st.nextToken())-1;
-                edges[start][end] = true;
+                dp[start][end] = 1;
             }
 
-            Queue<Integer> q = new ArrayDeque<>();
-            boolean[] v;
-            int[] d = new int[n];            
-            for(int i = 0; i < n; i++){
-                v = new boolean[n];
-                v[i] = true;
-                q.offer(i);
-                while(q.size() > 0){
-                    int cur = q.poll();
-                    for(int j = 0; j < n; j++){
-                        if(edges[cur][j] && !v[j]){
-                            q.offer(j);
-                            v[j] = true;
-                            d[i]++;                     
-                        }
-                    }
-                }
-                q.offer(i);
-                while(q.size() > 0){
-                    int cur = q.poll();
-                    for(int j = 0; j < n; j++){
-                        if(edges[j][cur] && !v[j]){
-                            q.offer(j);
-                            v[j] = true;
-                            d[i]++;                     
-                        }
+            for(int mid = 0; mid < n; mid++){
+                for(int start = 0; start < n; start++){
+                    if(dp[start][mid] == 501 || start==mid) continue;
+                    for(int end = 0; end < n; end++){
+                        dp[start][end] = Math.min(dp[start][end], dp[start][mid] + dp[mid][end]);
                     }
                 }
             }
-            int count = 0;
+            int ans = 0;
             for(int i = 0; i < n; i++){
-                if(d[i] == n-1) count++;
+                int count = 0;
+                for(int j = 0; j < n; j++){
+                    if(dp[i][j] != 501 || dp[j][i] != 501) count++;
+                }
+                if(count == n) ans++;
             }
-
-            sb.append(count).append("\n");
+            sb.append(ans).append("\n");
         }
         System.out.println(sb);
     }

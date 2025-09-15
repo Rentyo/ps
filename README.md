@@ -11,6 +11,14 @@
 
 <!-- BOJ_START -->
 <details>
+<summary>Bronze 문제 보기 (1개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| 바구니 뒤집기 | Bronze | 2025-09-15 | [Link](https://www.acmicpc.net/problem/10811) |
+</details>
+
+<details>
 <summary>Silver 문제 보기 (27개)</summary>
 
 | Problem | Tier | Solved On | Link |

@@ -28,19 +28,22 @@ public class Main {
         }
 
         int result = -1;
+        boolean find = false;
         while(!queue.isEmpty()){
             int[] cur = queue.poll();
 
-            if(map[cur[0]][cur[1]] == 3 || map[cur[0]][cur[1]] == 4 || map[cur[0]][cur[1]] == 5 ) {
-                result = cur[2];
-                break;
-            }
+            if(find) break;
 
             for(int i = 0; i < 4; i++){
                 int nR = cur[0] + d[i][0];
                 int nC = cur[1] + d[i][1];
 
                 if(nR < 0 || nR >= N || nC < 0 || nC >= M || visited[nR][nC] || map[nR][nC] == 1) continue;
+                if(map[nR][nC]== 3 || map[nR][nC]==4 || map[nR][nC]== 5 ){
+                    result = cur[2] + 1;
+                    find = true;
+                    break;
+                }
                 visited[nR][nC] = true;
                 queue.offer(new int[]{nR, nC, cur[2] +1});
             }

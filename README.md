@@ -126,7 +126,7 @@
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 정수 삼각형 | 3 | 2025-09-07 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/43105) |
-| 합승 택시 요금 | 3 | 2025-09-14 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/72413) |
+| 합승 택시 요금 | 3 | 2025-09-16 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/72413) |
 </details>
 
 <details>

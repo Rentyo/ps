@@ -44,6 +44,7 @@ class Solution {
             dist[index][cur[0]] = cur[1];
 
             for(int i = 0; i < map[cur[0]].size(); i++){
+                if(map[cur[0]].get(i)[1] + cur[1] > dist[index][map[cur[0]].get(i)[0]] ) continue;
                 pq.offer(new int[]{ map[cur[0]].get(i)[0],map[cur[0]].get(i)[1] + cur[1] });
             }
         }

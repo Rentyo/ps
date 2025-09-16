@@ -19,7 +19,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (27개)</summary>
+<summary>Silver 문제 보기 (28개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -45,6 +45,7 @@
 | 신입 사원 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/1946) |
 | 영역 구하기 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/2583) |
 | 영일랜드 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/31871) |
+| 윌리암슨수액빨이딱따구리가 정보섬에 올라온 이유 | Silver | 2025-09-16 | [Link](https://www.acmicpc.net/problem/17129) |
 | 자리배정 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/10157) |
 | 차이를 최대로 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/10819) |
 | 퇴사 | Silver | 2025-09-09 | [Link](https://www.acmicpc.net/problem/14501) |

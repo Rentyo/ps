@@ -53,7 +53,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (35개)</summary>
+<summary>Gold 문제 보기 (36개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -76,6 +76,7 @@
 | 뱀 | Gold | 2025-09-05 | [Link](https://www.acmicpc.net/problem/3190) |
 | 벽 부수고 이동하기 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/2206) |
 | 벽 부수고 이동하기 2 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/14442) |
+| 별자리 만들기 | Gold | 2025-09-16 | [Link](https://www.acmicpc.net/problem/4386) |
 | 사이클 게임 | Gold | 2025-09-01 | [Link](https://www.acmicpc.net/problem/20040) |
 | 사회망 서비스（SNS） | Gold | 2025-09-15 | [Link](https://www.acmicpc.net/problem/2533) |
 | 아기 상어 | Gold | 2025-08-23 | [Link](https://www.acmicpc.net/problem/16236) |

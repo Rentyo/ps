@@ -53,7 +53,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (34개)</summary>
+<summary>Gold 문제 보기 (35개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -81,6 +81,7 @@
 | 아기 상어 | Gold | 2025-08-23 | [Link](https://www.acmicpc.net/problem/16236) |
 | 알파벳 | Gold | 2025-07-20 | [Link](https://www.acmicpc.net/problem/1987) |
 | 연구소 3 | Gold | 2025-08-14 | [Link](https://www.acmicpc.net/problem/17142) |
+| 이항 계수 3 | Gold | 2025-09-16 | [Link](https://www.acmicpc.net/problem/11401) |
 | 줄 세우기 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2252) |
 | 최단경로 | Gold | 2025-09-14 | [Link](https://www.acmicpc.net/problem/1753) |
 | 최소비용 구하기 | Gold | 2025-09-15 | [Link](https://www.acmicpc.net/problem/1916) |

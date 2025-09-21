@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (37개)</summary>
+<summary>Gold 문제 보기 (38개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -87,6 +87,7 @@
 | 연구소 3 | Gold | 2025-08-14 | [Link](https://www.acmicpc.net/problem/17142) |
 | 이항 계수 3 | Gold | 2025-09-16 | [Link](https://www.acmicpc.net/problem/11401) |
 | 줄 세우기 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2252) |
+| 중량제한 | Gold | 2025-09-21 | [Link](https://www.acmicpc.net/problem/1939) |
 | 최단경로 | Gold | 2025-09-14 | [Link](https://www.acmicpc.net/problem/1753) |
 | 최소비용 구하기 | Gold | 2025-09-15 | [Link](https://www.acmicpc.net/problem/1916) |
 | 캐슬 디펜스 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/17135) |

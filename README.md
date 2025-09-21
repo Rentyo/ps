@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (38개)</summary>
+<summary>Gold 문제 보기 (39개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -71,6 +71,7 @@
 | 동전 2 | Gold | 2025-09-11 | [Link](https://www.acmicpc.net/problem/2294) |
 | 두 용액 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2470) |
 | 말이 되고픈 원숭이 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/1600) |
+| 메이플스토리 | Gold | 2025-09-21 | [Link](https://www.acmicpc.net/problem/20925) |
 | 미세먼지 안녕！ | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/17144) |
 | 배열 돌리기 1 | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/16926) |
 | 배열 돌리기 2 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/16927) |

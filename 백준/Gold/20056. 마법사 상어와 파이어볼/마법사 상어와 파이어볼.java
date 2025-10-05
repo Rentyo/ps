@@ -29,25 +29,18 @@ public class Main {
     static int N;
     static int K;
     //격자판
-    static HashSet<Integer>[][] map;
+    //row, col, (0 : 개수, 1 : 질량합, 2 : 속력 합, 3 : 방향 플래그, 4 : 방향
+    static int[][][] map;
     //id 값과 FireBall
-    static HashMap<Integer, FireBall> fireBalls;
-    // 만약 FireBall이 합쳐졌을 때 기존 FireBall이 없어지면서 남긴 id 재사용
-    static Queue<Integer> ids;
+    static Queue<FireBall> fireBalls;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
-        map = new HashSet[N][N];
-        for(int i = 0; i < N; i++){
-            for(int j = 0; j < N; j++){
-                map[i][j] = new HashSet<>();
-            }
-        }
-        fireBalls  = new HashMap<>();
-        ids = new ArrayDeque<>();
+        map = new int[N][N][5];
+        fireBalls  = new ArrayDeque<>();
         for(int i = 0; i < M; i++){
             st = new StringTokenizer(br.readLine());
             int row =  Integer.parseInt(st.nextToken())-1;
@@ -56,8 +49,13 @@ public class Main {
             int s = Integer.parseInt(st.nextToken());
             int d =   Integer.parseInt(st.nextToken());
             FireBall fb = new FireBall(row,col,m,s,d);
-            fireBalls.put(i, fb);
-            map[row][col].add(i);
+            map[row][col][0]++;
+            map[row][col][1] += m;
+            map[row][col][2] += s;
+            map[row][col][3] += (d % 2 == 0) ? 1 : -1;
+            map[row][col][4] += d;
+
+            fireBalls.offer(fb);
         }
 
 
@@ -66,55 +64,50 @@ public class Main {
         }
 
         int sum = 0;
-        for(Map.Entry<Integer, FireBall> entry : fireBalls.entrySet()){
-            sum +=  entry.getValue().m;
-        }
+        while(!fireBalls.isEmpty()) sum += fireBalls.poll().m;
         System.out.println(sum);
     }
     public static void simulate(){
-        // FireBall이 전부 이동한 후의 FireBall들의 위치
-        HashSet<String> pos = new HashSet<>();
-        for(Map.Entry<Integer, FireBall> entry    :fireBalls.entrySet()){
-            FireBall fb = entry.getValue();
-            map[fb.r][fb.c].remove(entry.getKey());
+        while(fireBalls.size() > 0){
+            FireBall fb = fireBalls.poll();
+            map[fb.r][fb.c][0]--;
+            map[fb.r][fb.c][1]-= fb.m;
+            map[fb.r][fb.c][2]-= fb.s;
+            map[fb.r][fb.c][3] -= fb.d % 2 == 0 ? 1 : -1;
+            map[fb.r][fb.c][4] -= fb.d;
             int nR = (fb.r + d[fb.d][0] * (fb.s % N) + N) % N;
             int nC = (fb.c + d[fb.d][1] * (fb.s % N) + N) % N;
-
-            map[nR][nC].add(entry.getKey());
-            pos.add(nR + " " + nC);
-
-            fb.r = nR;
-            fb.c = nC;
+            map[nR][nC][0] ++;
+            map[nR][nC][1] += fb.m;
+            map[nR][nC][2] += fb.s;
+            map[nR][nC][3] += fb.d % 2 == 0 ? 1 : -1;
+            map[nR][nC][4] += fb.d;
         }
-        for(String str : pos){
-            int r = Integer.parseInt(str.split(" ")[0]);
-            int c = Integer.parseInt(str.split(" ")[1]);
 
-            if(map[r][c].size() >= 2){
-                int sumM = 0;
-                int size = map[r][c].size();
-                int sumS = 0;
-                int odd = 0;
-                int even = 0;
-                for(Integer i : map[r][c]){
-                    ids.add(i);
-                    sumM += fireBalls.get(i).m;
-                    sumS += fireBalls.get(i).s;
-                    if(fireBalls.get(i).d % 2 == 0) even++;
-                    else odd++;
-                    fireBalls.remove(i);
-                }
-                map[r][c].clear();
-                if(sumM < 5) continue;
-
-                int startD = (odd == 0 || even == 0) ? 0 : 1;
-                for(int i = 0; i < 4; i++){
-                    if(ids.size() > 0){
-                        fireBalls.put(ids.poll(), new FireBall(r, c, sumM/5, sumS/size, startD));
-                    }else{
-                        fireBalls.put(fireBalls.size(), new FireBall(r, c, sumM/5, sumS/size, startD));
+        for(int i = 0; i < N; i++){
+            for(int j = 0; j < N ;j++){
+                if(map[i][j][0] == 0) continue;
+                else if(map[i][j][0] == 1) fireBalls.offer(new FireBall(i, j, map[i][j][1] , map[i][j][2], map[i][j][4]));
+                else{
+                    int nm = map[i][j][1] / 5;
+                    if (nm == 0) {
+                        for (int d = 0; d < 5; d++) {
+                            map[i][j][d] = 0;
+                        }
+                        continue;
                     }
-                    startD += 2;
+                    int ns = map[i][j][2] / map[i][j][0];
+                    int startD = (map[i][j][0] == Math.abs(map[i][j][3])) ? 0 : 1;
+
+                    for(int k = 0; k < 4; k++){
+                        fireBalls.offer(new FireBall(i, j, nm, ns, startD + 2 * k));
+                    }
+
+                    map[i][j][0] = 4;
+                    map[i][j][1] = nm * 4;
+                    map[i][j][2] = ns * 4;
+                    map[i][j][3] = 4 * (startD == 0 ? 1 : -1);
+                    map[i][j][4] = startD == 0 ? 12 : 16;
                 }
             }
         }

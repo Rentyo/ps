@@ -43,15 +43,13 @@ public class Main {
 
             // 현재 위치에서 탑승할 수 있는 손님 태우기
             int count = 0;
-            boolean hasPassenger = false;
             while (!currentSide.isEmpty() && currentSide.peek().time <= currentTime && count < m) {
                 Passenger p = currentSide.poll();
                 arrivalTimes[p.idx] = currentTime + t; // 도착 시간 기록
                 count++;
-                hasPassenger = true;
             }
 
-            if (hasPassenger) {
+            if (count > 0) {
                 // 손님 태웠으면 반대편으로 이동
                 currentTime += t;
                 isLeft = !isLeft;

@@ -66,7 +66,7 @@
 | 게리맨더링 | Gold | 2025-08-16 | [Link](https://www.acmicpc.net/problem/17471) |
 | 괄호 추가하기 | Gold | 2025-07-24 | [Link](https://www.acmicpc.net/problem/16637) |
 | 귀엽기만 한 게 아닌 한별 양 | Gold | 2025-10-13 | [Link](https://www.acmicpc.net/problem/27453) |
-| 나룻배 | Gold | 2025-10-13 | [Link](https://www.acmicpc.net/problem/2065) |
+| 나룻배 | Gold | 2025-10-15 | [Link](https://www.acmicpc.net/problem/2065) |
 | 내리막 길 | Gold | 2025-09-10 | [Link](https://www.acmicpc.net/problem/1520) |
 | 녹색 옷 입은 애가 젤다지？ | Gold | 2025-08-25 | [Link](https://www.acmicpc.net/problem/4485) |
 | 다리 만들기 2 | Gold | 2025-08-19 | [Link](https://www.acmicpc.net/problem/17472) |

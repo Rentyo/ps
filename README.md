@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (52개)</summary>
+<summary>Gold 문제 보기 (53개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -104,6 +104,7 @@
 | 치삼이의 징검다리 건너기 | Gold | 2025-09-28 | [Link](https://www.acmicpc.net/problem/18128) |
 | 치킨 배달 | Gold | 2025-10-05 | [Link](https://www.acmicpc.net/problem/15686) |
 | 캐슬 디펜스 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/17135) |
+| 크롬 | Gold | 2025-10-26 | [Link](https://www.acmicpc.net/problem/20667) |
 | 테트로미노 | Gold | 2025-09-28 | [Link](https://www.acmicpc.net/problem/14500) |
 | 토마토 | Gold | 2025-09-10 | [Link](https://www.acmicpc.net/problem/7576) |
 | 퇴사 2 | Gold | 2025-09-09 | [Link](https://www.acmicpc.net/problem/15486) |

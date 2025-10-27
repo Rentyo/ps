@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (53개)</summary>
+<summary>Gold 문제 보기 (54개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -89,6 +89,7 @@
 | 벽 타기 | Gold | 2025-10-19 | [Link](https://www.acmicpc.net/problem/23563) |
 | 별 찍기 － 10 | Gold | 2025-09-23 | [Link](https://www.acmicpc.net/problem/2447) |
 | 별자리 만들기 | Gold | 2025-09-16 | [Link](https://www.acmicpc.net/problem/4386) |
+| 불！ | Gold | 2025-10-27 | [Link](https://www.acmicpc.net/problem/4179) |
 | 사이클 게임 | Gold | 2025-09-01 | [Link](https://www.acmicpc.net/problem/20040) |
 | 사회망 서비스（SNS） | Gold | 2025-09-15 | [Link](https://www.acmicpc.net/problem/2533) |
 | 아기 상어 | Gold | 2025-08-23 | [Link](https://www.acmicpc.net/problem/16236) |

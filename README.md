@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (55개)</summary>
+<summary>Gold 문제 보기 (56개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -99,6 +99,7 @@
 | 연구소 3 | Gold | 2025-08-14 | [Link](https://www.acmicpc.net/problem/17142) |
 | 이분 그래프 | Gold | 2025-10-28 | [Link](https://www.acmicpc.net/problem/1707) |
 | 이항 계수 3 | Gold | 2025-09-16 | [Link](https://www.acmicpc.net/problem/11401) |
+| 좋다 | Gold | 2025-10-29 | [Link](https://www.acmicpc.net/problem/1253) |
 | 줄 세우기 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2252) |
 | 중량제한 | Gold | 2025-09-21 | [Link](https://www.acmicpc.net/problem/1939) |
 | 최단경로 | Gold | 2025-09-14 | [Link](https://www.acmicpc.net/problem/1753) |

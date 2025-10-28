@@ -14,6 +14,7 @@ public class Main {
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
         int[][] map = new int[N][M];
+        boolean[][] v = new boolean[N][M];
         Queue<int[]> fires =  new ArrayDeque<>();
         Queue<int[]> player = new ArrayDeque<>();
         for(int i = 0; i < N; i++){
@@ -29,6 +30,7 @@ public class Main {
                             return;
                         }
                         player.offer(new int[]{i, j, 1});
+                        v[i][j] = true;
                         map[i][j] = 0; break;
                     }
                     default: map[i][j] = 1000_001; break;
@@ -59,8 +61,8 @@ public class Main {
                     int nR = cur[0] + d[i][0];
                     int nC = cur[1] + d[i][1];
 
-                    if(nR < 0 || nR >= N || nC < 0 || nC >= M || cur[2] + 1 >= map[nR][nC]) continue;
-
+                    if(nR < 0 || nR >= N || nC < 0 || nC >= M || cur[2] + 1 >= map[nR][nC] || v[nR][nC]) continue;
+                    v[nR][nC] = true;
                     if(nR == 0 || nR == N-1 || nC == 0 || nC == M-1){
                         System.out.println(cur[2]+1);
                         return;

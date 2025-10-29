@@ -55,13 +55,14 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (56개)</summary>
+<summary>Gold 문제 보기 (57개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 2048 （Easy） | Gold | 2025-08-13 | [Link](https://www.acmicpc.net/problem/12100) |
 | ⚾ | Gold | 2025-08-09 | [Link](https://www.acmicpc.net/problem/17281) |
 | 가르침 | Gold | 2025-09-28 | [Link](https://www.acmicpc.net/problem/1062) |
+| 가운데를 말해요 | Gold | 2025-10-29 | [Link](https://www.acmicpc.net/problem/1655) |
 | 감시 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/15683) |
 | 게리맨더링 | Gold | 2025-08-16 | [Link](https://www.acmicpc.net/problem/17471) |
 | 괄호 추가하기 | Gold | 2025-07-24 | [Link](https://www.acmicpc.net/problem/16637) |

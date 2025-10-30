@@ -120,10 +120,11 @@
 </details>
 
 <details>
-<summary>Platinum 문제 보기 (1개)</summary>
+<summary>Platinum 문제 보기 (2개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
+| 도로포장 | Platinum | 2025-10-30 | [Link](https://www.acmicpc.net/problem/1162) |
 | 행성 터널 | Platinum | 2025-09-11 | [Link](https://www.acmicpc.net/problem/2887) |
 </details>
 

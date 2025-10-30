@@ -53,11 +53,14 @@ public class Main {
             int pos = cur.to;
             long d = cur.dist;
             int count = cur.count;
+            if(pos == N-1){
+                System.out.println(d);
+                return;
+            }
             if(dist[count][pos] <= d) continue;
             dist[count][pos] = d;
 
-            for(int i = 0; i < arr[pos].size(); i++){
-                Travel next = arr[pos].get(i);
+            for(Travel next : arr[pos]){
                 if(dist[count][next.to] > d + next.dist){
                     pq.offer(new Travel(next.to, d + next.dist, count));
                 }
@@ -67,10 +70,5 @@ public class Main {
                 }
             }
         }
-        long min = maxDist;
-        for(int i = 0; i <= K; i++){
-            min = Math.min(min, dist[i][N-1]);
-        }
-        System.out.println(min);
     }
 }

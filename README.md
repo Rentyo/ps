@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (58개)</summary>
+<summary>Gold 문제 보기 (59개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -77,6 +77,7 @@
 | 동전 2 | Gold | 2025-09-11 | [Link](https://www.acmicpc.net/problem/2294) |
 | 두 용액 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2470) |
 | 레드스톤 | Gold | 2025-10-19 | [Link](https://www.acmicpc.net/problem/28291) |
+| 로봇 조종하기 | Gold | 2025-10-31 | [Link](https://www.acmicpc.net/problem/2169) |
 | 마법사 상어와 파이어볼 | Gold | 2025-10-05 | [Link](https://www.acmicpc.net/problem/20056) |
 | 말이 되고픈 원숭이 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/1600) |
 | 메이플스토리 | Gold | 2025-09-21 | [Link](https://www.acmicpc.net/problem/20925) |

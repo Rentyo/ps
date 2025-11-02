@@ -47,7 +47,7 @@ public class Main {
                 q.offer(new Pos(next2, p.time+1));
             }
             int next3 = p.pos * 2;
-            if(next3 != 0 && next3 <= v.length-1 && v[next3] > p.time){
+            if(next3 <= v.length-1 && v[next3] > p.time){
                 q.offer(new Pos(next3, p.time));
             }
 

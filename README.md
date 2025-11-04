@@ -55,11 +55,12 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (62개)</summary>
+<summary>Gold 문제 보기 (63개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 2048 （Easy） | Gold | 2025-08-13 | [Link](https://www.acmicpc.net/problem/12100) |
+| Fruit Feast | Gold | 2025-11-04 | [Link](https://www.acmicpc.net/problem/11964) |
 | ⚾ | Gold | 2025-08-09 | [Link](https://www.acmicpc.net/problem/17281) |
 | 가르침 | Gold | 2025-09-28 | [Link](https://www.acmicpc.net/problem/1062) |
 | 가운데를 말해요 | Gold | 2025-10-29 | [Link](https://www.acmicpc.net/problem/1655) |

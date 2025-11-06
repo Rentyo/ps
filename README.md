@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (64개)</summary>
+<summary>Gold 문제 보기 (65개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -68,6 +68,7 @@
 | 게리맨더링 | Gold | 2025-08-16 | [Link](https://www.acmicpc.net/problem/17471) |
 | 괄호 추가하기 | Gold | 2025-07-24 | [Link](https://www.acmicpc.net/problem/16637) |
 | 구간 자르기 | Gold | 2025-10-30 | [Link](https://www.acmicpc.net/problem/2283) |
+| 구슬 찾기 | Gold | 2025-11-06 | [Link](https://www.acmicpc.net/problem/2617) |
 | 귀엽기만 한 게 아닌 한별 양 | Gold | 2025-10-13 | [Link](https://www.acmicpc.net/problem/27453) |
 | 나룻배 | Gold | 2025-10-15 | [Link](https://www.acmicpc.net/problem/2065) |
 | 나무 재테크 | Gold | 2025-10-20 | [Link](https://www.acmicpc.net/problem/16235) |

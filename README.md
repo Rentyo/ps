@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (68개)</summary>
+<summary>Gold 문제 보기 (69개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -87,6 +87,7 @@
 | 메이플스토리 | Gold | 2025-09-21 | [Link](https://www.acmicpc.net/problem/20925) |
 | 물통 | Gold | 2025-11-01 | [Link](https://www.acmicpc.net/problem/2251) |
 | 뮤탈리스크 | Gold | 2025-10-24 | [Link](https://www.acmicpc.net/problem/12869) |
+| 미로 탈출 | Gold | 2025-11-10 | [Link](https://www.acmicpc.net/problem/14923) |
 | 미세먼지 안녕！ | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/17144) |
 | 배열 돌리기 1 | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/16926) |
 | 배열 돌리기 2 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/16927) |

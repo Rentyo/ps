@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (71개)</summary>
+<summary>Gold 문제 보기 (72개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -74,6 +74,7 @@
 | 귀엽기만 한 게 아닌 한별 양 | Gold | 2025-10-13 | [Link](https://www.acmicpc.net/problem/27453) |
 | 나룻배 | Gold | 2025-10-15 | [Link](https://www.acmicpc.net/problem/2065) |
 | 나무 재테크 | Gold | 2025-10-20 | [Link](https://www.acmicpc.net/problem/16235) |
+| 내려가기 | Gold | 2025-11-13 | [Link](https://www.acmicpc.net/problem/2096) |
 | 내리막 길 | Gold | 2025-09-10 | [Link](https://www.acmicpc.net/problem/1520) |
 | 녹색 옷 입은 애가 젤다지？ | Gold | 2025-08-25 | [Link](https://www.acmicpc.net/problem/4485) |
 | 다리 만들기 2 | Gold | 2025-08-19 | [Link](https://www.acmicpc.net/problem/17472) |

@@ -22,28 +22,14 @@ public class Main {
         }
 
         for(int i = 1; i < n; i++){
-            for(int j = 0; j < 3; j++){
-                maxDP[i][j] = maxDP[i-1][j];
-                minDP[i][j] = minDP[i-1][j];
-                if(j-1 >= 0){
-                    maxDP[i][j] = Math.max(maxDP[i][j], maxDP[i-1][j-1]);
-                    minDP[i][j] = Math.min(minDP[i][j], minDP[i-1][j-1]);
-                }
-                if(j+1 < 3){
-                    maxDP[i][j] = Math.max(maxDP[i][j], maxDP[i-1][j+1]);
-                    minDP[i][j] = Math.min(minDP[i][j], minDP[i-1][j+1]);
-                }
-                maxDP[i][j] += arr[i][j];
-                minDP[i][j] += arr[i][j];
-            }
+            maxDP[i][0] = Math.max(maxDP[i-1][0], maxDP[i-1][1]) + arr[i][0];
+            minDP[i][0] = Math.min(minDP[i-1][0], minDP[i-1][1]) + arr[i][0];
+            maxDP[i][1] = Math.max(Math.max(maxDP[i-1][0] , maxDP[i-1][2]), maxDP[i-1][1]) + arr[i][1];
+            minDP[i][1] = Math.min(Math.min(minDP[i-1][0] , minDP[i-1][2]), minDP[i-1][1]) + arr[i][1]; 
+            maxDP[i][2] = Math.max(maxDP[i-1][2], maxDP[i-1][1]) + arr[i][2];
+            minDP[i][2] = Math.min(minDP[i-1][2], minDP[i-1][1]) + arr[i][2];
         }
-        int max = 0;
-        int min = Integer.MAX_VALUE;
-        for(int i = 0 ; i < 3; i++){
-            max = Math.max(max, maxDP[n-1][i]);
-            min = Math.min(min, minDP[n-1][i]);
-        }
-        System.out.println(max + " " + min);
+        System.out.println(Math.max(maxDP[n-1][0], Math.max(maxDP[n-1][1], maxDP[n-1][2])) + " " + Math.min(minDP[n-1][0], Math.min(minDP[n-1][1], minDP[n-1][2])));
 
 
     }

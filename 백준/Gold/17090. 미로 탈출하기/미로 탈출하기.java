@@ -1,8 +1,13 @@
 import java.io.*;
 import java.util.*;
 public class Main {
-    static HashMap<Character, int[]> map;
-    static char[][] maze;
+    static int[][] d = {
+        {-1, 0},
+        {0, 1},
+        {1, 0},
+        {0, -1}
+    };
+    static int[][] maze;
     static boolean[][] poss;
     static boolean[][] v;
     static int N;
@@ -12,18 +17,27 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
-        map = new HashMap<>();
-        map.put('U', new int[]{-1, 0});
-        map.put('R', new int[]{0, 1});
-        map.put('D', new int[]{1, 0});
-        map.put('L', new int[]{0, -1});
-        maze = new char[N][M];
+        maze = new int[N][M];
         poss = new boolean[N][M];
         v = new boolean[N][M];
         for(int i = 0; i < N; i++){
             String s = br.readLine();
             for(int j = 0; j < M; j++){
-                maze[i][j] = s.charAt(j);
+                switch(s.charAt(j)){
+                    case 'U' :
+                        maze[i][j] = 0;
+                        break;
+                    case 'R' :
+                        maze[i][j] = 1;
+                        break;
+                    case 'D' :
+                        maze[i][j] = 2;
+                        break;
+                    case 'L' :
+                        maze[i][j] = 3;
+                        break;
+
+                }
             }
         }
 
@@ -49,8 +63,8 @@ public class Main {
 
         v[row][col] = true;
 
-        int nr = row + map.get(maze[row][col])[0];
-        int nc = col + map.get(maze[row][col])[1];
+        int nr = row + d[maze[row][col]][0];
+        int nc = col + d[maze[row][col]][1];
 
         boolean res;
         if (nr < 0 || nr >= N || nc < 0 || nc >= M) res = true;

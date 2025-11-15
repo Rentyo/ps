@@ -56,7 +56,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (73개)</summary>
+<summary>Gold 문제 보기 (74개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -88,6 +88,7 @@
 | 마법사 상어와 파이어볼 | Gold | 2025-10-05 | [Link](https://www.acmicpc.net/problem/20056) |
 | 말이 되고픈 원숭이 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/1600) |
 | 메이플스토리 | Gold | 2025-09-21 | [Link](https://www.acmicpc.net/problem/20925) |
+| 모독 | Gold | 2025-11-15 | [Link](https://www.acmicpc.net/problem/16678) |
 | 물통 | Gold | 2025-11-01 | [Link](https://www.acmicpc.net/problem/2251) |
 | 뮤탈리스크 | Gold | 2025-10-24 | [Link](https://www.acmicpc.net/problem/12869) |
 | 미로 탈출 | Gold | 2025-11-10 | [Link](https://www.acmicpc.net/problem/14923) |

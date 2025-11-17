@@ -56,7 +56,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (75개)</summary>
+<summary>Gold 문제 보기 (76개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -93,6 +93,7 @@
 | 뮤탈리스크 | Gold | 2025-10-24 | [Link](https://www.acmicpc.net/problem/12869) |
 | 미로 탈출 | Gold | 2025-11-10 | [Link](https://www.acmicpc.net/problem/14923) |
 | 미로 탈출하기 | Gold | 2025-11-14 | [Link](https://www.acmicpc.net/problem/17090) |
+| 미로만들기 | Gold | 2025-11-17 | [Link](https://www.acmicpc.net/problem/2665) |
 | 미세먼지 안녕！ | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/17144) |
 | 배열 돌리기 1 | Gold | 2025-08-29 | [Link](https://www.acmicpc.net/problem/16926) |
 | 배열 돌리기 2 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/16927) |

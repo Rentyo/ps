@@ -56,7 +56,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (76개)</summary>
+<summary>Gold 문제 보기 (77개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -136,6 +136,7 @@
 | 플로이드 | Gold | 2025-09-04 | [Link](https://www.acmicpc.net/problem/11404) |
 | 해킹 | Gold | 2025-09-14 | [Link](https://www.acmicpc.net/problem/10282) |
 | 행렬 제곱 | Gold | 2025-08-06 | [Link](https://www.acmicpc.net/problem/10830) |
+| 호텔 | Gold | 2025-11-18 | [Link](https://www.acmicpc.net/problem/1106) |
 </details>
 
 <details>

@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.*;
 public class Main{
@@ -26,7 +25,7 @@ public class Main{
             min = Math.min(min, Math.abs(sum - N) + count);
         }
         
-        if(count == 7) return;  
+        if(count == 6) return;  
         
         for(int i = 0; i <= 9; i++){
             if((v & (1 << i)) != 0) continue;

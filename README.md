@@ -56,7 +56,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (78개)</summary>
+<summary>Gold 문제 보기 (79개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -82,6 +82,7 @@
 | 단어 수학 | Gold | 2025-11-09 | [Link](https://www.acmicpc.net/problem/1339) |
 | 달이 차오른다， 가자． | Gold | 2025-08-23 | [Link](https://www.acmicpc.net/problem/1194) |
 | 동전 2 | Gold | 2025-09-11 | [Link](https://www.acmicpc.net/problem/2294) |
+| 동전 문제 | Gold | 2025-11-19 | [Link](https://www.acmicpc.net/problem/1398) |
 | 두 용액 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2470) |
 | 레드스톤 | Gold | 2025-10-19 | [Link](https://www.acmicpc.net/problem/28291) |
 | 로봇 조종하기 | Gold | 2025-10-31 | [Link](https://www.acmicpc.net/problem/2169) |

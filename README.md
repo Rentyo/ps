@@ -56,7 +56,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (79개)</summary>
+<summary>Gold 문제 보기 (80개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -127,6 +127,7 @@
 | 중량제한 | Gold | 2025-09-21 | [Link](https://www.acmicpc.net/problem/1939) |
 | 최단경로 | Gold | 2025-09-14 | [Link](https://www.acmicpc.net/problem/1753) |
 | 최소비용 구하기 | Gold | 2025-09-15 | [Link](https://www.acmicpc.net/problem/1916) |
+| 최소비용 구하기 2 | Gold | 2025-11-20 | [Link](https://www.acmicpc.net/problem/11779) |
 | 치삼이의 징검다리 건너기 | Gold | 2025-09-28 | [Link](https://www.acmicpc.net/problem/18128) |
 | 치킨 배달 | Gold | 2025-10-05 | [Link](https://www.acmicpc.net/problem/15686) |
 | 캐슬 디펜스 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/17135) |

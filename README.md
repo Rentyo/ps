@@ -20,12 +20,13 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (29개)</summary>
+<summary>Silver 문제 보기 (30개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 1， 2， 3 더하기 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/9095) |
 | 2×n 타일링 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/11726) |
+| 2＋1 세일 | Silver | 2025-11-21 | [Link](https://www.acmicpc.net/problem/11508) |
 | DFS와 BFS | Silver | 2025-09-17 | [Link](https://www.acmicpc.net/problem/1260) |
 | 가장 긴 감소하는 부분 수열 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/11722) |
 | 결혼식 | Silver | 2025-08-06 | [Link](https://www.acmicpc.net/problem/5567) |

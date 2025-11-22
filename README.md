@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (30개)</summary>
+<summary>Silver 문제 보기 (31개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -46,6 +46,7 @@
 | 순열 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/9742) |
 | 스타트링크 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/5014) |
 | 신입 사원 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/1946) |
+| 알고리즘 수업 － 깊이 우선 탐색 2 | Silver | 2025-11-22 | [Link](https://www.acmicpc.net/problem/24480) |
 | 영역 구하기 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/2583) |
 | 영일랜드 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/31871) |
 | 윌리암슨수액빨이딱따구리가 정보섬에 올라온 이유 | Silver | 2025-09-16 | [Link](https://www.acmicpc.net/problem/17129) |

@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (31개)</summary>
+<summary>Silver 문제 보기 (32개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -42,6 +42,7 @@
 | 부분수열의 합 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/1182) |
 | 상근이의 여행 | Silver | 2025-08-11 | [Link](https://www.acmicpc.net/problem/9372) |
 | 색종이 만들기 | Silver | 2025-09-01 | [Link](https://www.acmicpc.net/problem/2630) |
+| 생일 | Silver | 2025-11-23 | [Link](https://www.acmicpc.net/problem/5635) |
 | 섬의 개수 | Silver | 2025-08-06 | [Link](https://www.acmicpc.net/problem/4963) |
 | 순열 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/9742) |
 | 스타트링크 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/5014) |

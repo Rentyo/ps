@@ -59,7 +59,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (80개)</summary>
+<summary>Gold 문제 보기 (81개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -90,6 +90,7 @@
 | 레드스톤 | Gold | 2025-10-19 | [Link](https://www.acmicpc.net/problem/28291) |
 | 로봇 조종하기 | Gold | 2025-10-31 | [Link](https://www.acmicpc.net/problem/2169) |
 | 리모컨 | Gold | 2025-11-19 | [Link](https://www.acmicpc.net/problem/1107) |
+| 마라톤 2 | Gold | 2025-11-24 | [Link](https://www.acmicpc.net/problem/10653) |
 | 마법사 상어와 파이어볼 | Gold | 2025-10-05 | [Link](https://www.acmicpc.net/problem/20056) |
 | 말이 되고픈 원숭이 | Gold | 2025-08-20 | [Link](https://www.acmicpc.net/problem/1600) |
 | 메이플스토리 | Gold | 2025-09-21 | [Link](https://www.acmicpc.net/problem/20925) |

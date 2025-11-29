@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (34개)</summary>
+<summary>Silver 문제 보기 (35개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -55,6 +55,7 @@
 | 자리배정 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/10157) |
 | 점프 | Silver | 2025-11-28 | [Link](https://www.acmicpc.net/problem/1890) |
 | 차이를 최대로 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/10819) |
+| 케빈 베이컨의 6단계 법칙 | Silver | 2025-11-29 | [Link](https://www.acmicpc.net/problem/1389) |
 | 퇴사 | Silver | 2025-09-09 | [Link](https://www.acmicpc.net/problem/14501) |
 | 특정 거리의 도시 찾기 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/18352) |
 | 효율적인 해킹 | Silver | 2025-08-07 | [Link](https://www.acmicpc.net/problem/1325) |

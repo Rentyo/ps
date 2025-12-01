@@ -62,7 +62,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (84개)</summary>
+<summary>Gold 문제 보기 (85개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -132,6 +132,7 @@
 | 좋다 | Gold | 2025-10-29 | [Link](https://www.acmicpc.net/problem/1253) |
 | 줄 세우기 | Gold | 2025-08-05 | [Link](https://www.acmicpc.net/problem/2252) |
 | 중량제한 | Gold | 2025-09-21 | [Link](https://www.acmicpc.net/problem/1939) |
+| 중복 제거 | Gold | 2025-12-01 | [Link](https://www.acmicpc.net/problem/13701) |
 | 증가하는 수 | Gold | 2025-11-26 | [Link](https://www.acmicpc.net/problem/10573) |
 | 집 구하기 | Gold | 2025-11-27 | [Link](https://www.acmicpc.net/problem/13911) |
 | 최단경로 | Gold | 2025-09-14 | [Link](https://www.acmicpc.net/problem/1753) |

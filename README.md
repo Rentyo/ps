@@ -62,7 +62,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (85개)</summary>
+<summary>Gold 문제 보기 (86개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -115,6 +115,7 @@
 | 별자리 만들기 | Gold | 2025-09-16 | [Link](https://www.acmicpc.net/problem/4386) |
 | 부분합 | Gold | 2025-11-08 | [Link](https://www.acmicpc.net/problem/1806) |
 | 불！ | Gold | 2025-10-28 | [Link](https://www.acmicpc.net/problem/4179) |
+| 빗물 | Gold | 2025-12-02 | [Link](https://www.acmicpc.net/problem/14719) |
 | 사이클 게임 | Gold | 2025-09-01 | [Link](https://www.acmicpc.net/problem/20040) |
 | 사회망 서비스（SNS） | Gold | 2025-09-15 | [Link](https://www.acmicpc.net/problem/2533) |
 | 센서 | Gold | 2025-11-16 | [Link](https://www.acmicpc.net/problem/2212) |

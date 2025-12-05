@@ -63,7 +63,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (87개)</summary>
+<summary>Gold 문제 보기 (88개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -128,6 +128,7 @@
 | 암호 만들기 | Gold | 2025-11-05 | [Link](https://www.acmicpc.net/problem/1759) |
 | 어？ 금지 | Gold | 2025-10-06 | [Link](https://www.acmicpc.net/problem/30621) |
 | 연구소 3 | Gold | 2025-08-14 | [Link](https://www.acmicpc.net/problem/17142) |
+| 욕심쟁이 판다 | Gold | 2025-12-05 | [Link](https://www.acmicpc.net/problem/1937) |
 | 우주 탐사선 | Gold | 2025-11-03 | [Link](https://www.acmicpc.net/problem/17182) |
 | 우주신과의 교감 | Gold | 2025-11-12 | [Link](https://www.acmicpc.net/problem/1774) |
 | 이분 그래프 | Gold | 2025-10-28 | [Link](https://www.acmicpc.net/problem/1707) |

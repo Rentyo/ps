@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (36개)</summary>
+<summary>Silver 문제 보기 (37개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -55,6 +55,7 @@
 | 윌리암슨수액빨이딱따구리가 정보섬에 올라온 이유 | Silver | 2025-09-16 | [Link](https://www.acmicpc.net/problem/17129) |
 | 자리배정 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/10157) |
 | 점프 | Silver | 2025-11-28 | [Link](https://www.acmicpc.net/problem/1890) |
+| 정수 a를 k로 만들기 | Silver | 2025-12-06 | [Link](https://www.acmicpc.net/problem/25418) |
 | 차이를 최대로 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/10819) |
 | 케빈 베이컨의 6단계 법칙 | Silver | 2025-11-29 | [Link](https://www.acmicpc.net/problem/1389) |
 | 퇴사 | Silver | 2025-09-09 | [Link](https://www.acmicpc.net/problem/14501) |

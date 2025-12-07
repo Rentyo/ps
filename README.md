@@ -11,10 +11,11 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Bronze 문제 보기 (2개)</summary>
+<summary>Bronze 문제 보기 (3개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
+| OX퀴즈 | Bronze | 2025-12-07 | [Link](https://www.acmicpc.net/problem/8958) |
 | 바구니 뒤집기 | Bronze | 2025-09-15 | [Link](https://www.acmicpc.net/problem/10811) |
 | 분해합 | Bronze | 2025-11-13 | [Link](https://www.acmicpc.net/problem/2231) |
 </details>

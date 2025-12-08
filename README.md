@@ -11,10 +11,11 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Bronze 문제 보기 (5개)</summary>
+<summary>Bronze 문제 보기 (6개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
+| $A ＋ B － C$ | Bronze | 2025-12-08 | [Link](https://www.acmicpc.net/problem/31403) |
 | N 찍기 | Bronze | 2025-12-08 | [Link](https://www.acmicpc.net/problem/2741) |
 | OX퀴즈 | Bronze | 2025-12-07 | [Link](https://www.acmicpc.net/problem/8958) |
 | 검증수 | Bronze | 2025-12-08 | [Link](https://www.acmicpc.net/problem/2475) |

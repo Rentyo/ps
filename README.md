@@ -11,7 +11,7 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Bronze 문제 보기 (9개)</summary>
+<summary>Bronze 문제 보기 (10개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -24,6 +24,7 @@
 | 분해합 | Bronze | 2025-11-13 | [Link](https://www.acmicpc.net/problem/2231) |
 | 숫자의 개수 | Bronze | 2025-12-09 | [Link](https://www.acmicpc.net/problem/2577) |
 | 음계 | Bronze | 2025-12-09 | [Link](https://www.acmicpc.net/problem/2920) |
+| 직각삼각형 | Bronze | 2025-12-10 | [Link](https://www.acmicpc.net/problem/4153) |
 </details>
 
 <details>

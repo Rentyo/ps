@@ -11,7 +11,7 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Bronze 문제 보기 (12개)</summary>
+<summary>Bronze 문제 보기 (13개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -27,6 +27,7 @@
 | 웰컴 키트 | Bronze | 2025-12-11 | [Link](https://www.acmicpc.net/problem/30802) |
 | 음계 | Bronze | 2025-12-09 | [Link](https://www.acmicpc.net/problem/2920) |
 | 직각삼각형 | Bronze | 2025-12-10 | [Link](https://www.acmicpc.net/problem/4153) |
+| 팰린드롬수 | Bronze | 2025-12-14 | [Link](https://www.acmicpc.net/problem/1259) |
 </details>
 
 <details>

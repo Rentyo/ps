@@ -11,13 +11,14 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Bronze 문제 보기 (14개)</summary>
+<summary>Bronze 문제 보기 (15개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | $A ＋ B － C$ | Bronze | 2025-12-08 | [Link](https://www.acmicpc.net/problem/31403) |
 | ACM 호텔 | Bronze | 2025-12-08 | [Link](https://www.acmicpc.net/problem/10250) |
 | Hashing | Bronze | 2025-12-12 | [Link](https://www.acmicpc.net/problem/15829) |
+| ISBN | Bronze | 2025-12-16 | [Link](https://www.acmicpc.net/problem/14626) |
 | N 찍기 | Bronze | 2025-12-08 | [Link](https://www.acmicpc.net/problem/2741) |
 | OX퀴즈 | Bronze | 2025-12-07 | [Link](https://www.acmicpc.net/problem/8958) |
 | 검증수 | Bronze | 2025-12-08 | [Link](https://www.acmicpc.net/problem/2475) |

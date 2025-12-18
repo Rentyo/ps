@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (37개)</summary>
+<summary>Silver 문제 보기 (38개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -74,6 +74,7 @@
 | 케빈 베이컨의 6단계 법칙 | Silver | 2025-11-29 | [Link](https://www.acmicpc.net/problem/1389) |
 | 퇴사 | Silver | 2025-09-09 | [Link](https://www.acmicpc.net/problem/14501) |
 | 특정 거리의 도시 찾기 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/18352) |
+| 팩토리얼 0의 개수 | Silver | 2025-12-18 | [Link](https://www.acmicpc.net/problem/1676) |
 | 효율적인 해킹 | Silver | 2025-08-07 | [Link](https://www.acmicpc.net/problem/1325) |
 </details>
 

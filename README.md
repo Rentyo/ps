@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (38개)</summary>
+<summary>Silver 문제 보기 (39개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -48,6 +48,7 @@
 | 계단 오르기 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/2579) |
 | 그림 | Silver | 2025-08-27 | [Link](https://www.acmicpc.net/problem/1926) |
 | 나이트의 이동 | Silver | 2025-08-28 | [Link](https://www.acmicpc.net/problem/7562) |
+| 덩치 | Silver | 2025-12-23 | [Link](https://www.acmicpc.net/problem/7568) |
 | 도영이가 만든 맛있는 음식 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/2961) |
 | 동물원 | Silver | 2025-09-07 | [Link](https://www.acmicpc.net/problem/1309) |
 | 미로 탐색 | Silver | 2025-07-21 | [Link](https://www.acmicpc.net/problem/2178) |

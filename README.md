@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (40개)</summary>
+<summary>Silver 문제 보기 (41개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -64,6 +64,7 @@
 | 순열 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/9742) |
 | 스타트링크 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/5014) |
 | 스택 | Silver | 2025-12-23 | [Link](https://www.acmicpc.net/problem/10828) |
+| 스택 수열 | Silver | 2026-01-01 | [Link](https://www.acmicpc.net/problem/1874) |
 | 신입 사원 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/1946) |
 | 알고리즘 수업 － 깊이 우선 탐색 2 | Silver | 2025-11-22 | [Link](https://www.acmicpc.net/problem/24480) |
 | 영역 구하기 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/2583) |

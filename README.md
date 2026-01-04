@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (42개)</summary>
+<summary>Silver 문제 보기 (43개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -73,6 +73,7 @@
 | 자리배정 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/10157) |
 | 점프 | Silver | 2025-11-28 | [Link](https://www.acmicpc.net/problem/1890) |
 | 정수 a를 k로 만들기 | Silver | 2025-12-06 | [Link](https://www.acmicpc.net/problem/25418) |
+| 집합 | Silver | 2026-01-04 | [Link](https://www.acmicpc.net/problem/11723) |
 | 차이를 최대로 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/10819) |
 | 케빈 베이컨의 6단계 법칙 | Silver | 2025-11-29 | [Link](https://www.acmicpc.net/problem/1389) |
 | 퇴사 | Silver | 2025-09-09 | [Link](https://www.acmicpc.net/problem/14501) |

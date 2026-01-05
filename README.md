@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (43개)</summary>
+<summary>Silver 문제 보기 (44개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -56,6 +56,7 @@
 | 병사 배치하기 | Silver | 2025-09-07 | [Link](https://www.acmicpc.net/problem/18353) |
 | 봄버맨 | Silver | 2025-08-24 | [Link](https://www.acmicpc.net/problem/16918) |
 | 부분수열의 합 | Silver | 2025-08-09 | [Link](https://www.acmicpc.net/problem/1182) |
+| 비밀번호 찾기 | Silver | 2026-01-05 | [Link](https://www.acmicpc.net/problem/17219) |
 | 상근이의 여행 | Silver | 2025-08-11 | [Link](https://www.acmicpc.net/problem/9372) |
 | 색종이 만들기 | Silver | 2025-09-01 | [Link](https://www.acmicpc.net/problem/2630) |
 | 생일 | Silver | 2025-11-23 | [Link](https://www.acmicpc.net/problem/5635) |

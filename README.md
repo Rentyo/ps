@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (47개)</summary>
+<summary>Silver 문제 보기 (48개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -72,6 +72,7 @@
 | 영역 구하기 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/2583) |
 | 영일랜드 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/31871) |
 | 윌리암슨수액빨이딱따구리가 정보섬에 올라온 이유 | Silver | 2025-09-16 | [Link](https://www.acmicpc.net/problem/17129) |
+| 유기농 배추 | Silver | 2026-01-09 | [Link](https://www.acmicpc.net/problem/1012) |
 | 자리배정 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/10157) |
 | 점프 | Silver | 2025-11-28 | [Link](https://www.acmicpc.net/problem/1890) |
 | 정수 a를 k로 만들기 | Silver | 2025-12-06 | [Link](https://www.acmicpc.net/problem/25418) |

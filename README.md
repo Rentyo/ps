@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (52개)</summary>
+<summary>Silver 문제 보기 (53개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -48,6 +48,7 @@
 | 가장 긴 감소하는 부분 수열 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/11722) |
 | 결혼식 | Silver | 2025-08-06 | [Link](https://www.acmicpc.net/problem/5567) |
 | 계단 오르기 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/2579) |
+| 과일 탕후루 | Silver | 2026-01-14 | [Link](https://www.acmicpc.net/problem/30804) |
 | 그림 | Silver | 2025-08-27 | [Link](https://www.acmicpc.net/problem/1926) |
 | 나이트의 이동 | Silver | 2025-08-28 | [Link](https://www.acmicpc.net/problem/7562) |
 | 덩치 | Silver | 2025-12-23 | [Link](https://www.acmicpc.net/problem/7568) |

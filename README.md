@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (53개)</summary>
+<summary>Silver 문제 보기 (54개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -51,6 +51,7 @@
 | 과일 탕후루 | Silver | 2026-01-14 | [Link](https://www.acmicpc.net/problem/30804) |
 | 그림 | Silver | 2025-08-27 | [Link](https://www.acmicpc.net/problem/1926) |
 | 나이트의 이동 | Silver | 2025-08-28 | [Link](https://www.acmicpc.net/problem/7562) |
+| 단지번호붙이기 | Silver | 2026-01-15 | [Link](https://www.acmicpc.net/problem/2667) |
 | 덩치 | Silver | 2025-12-23 | [Link](https://www.acmicpc.net/problem/7568) |
 | 도영이가 만든 맛있는 음식 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/2961) |
 | 동물원 | Silver | 2025-09-07 | [Link](https://www.acmicpc.net/problem/1309) |

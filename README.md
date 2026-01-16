@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (54개)</summary>
+<summary>Silver 문제 보기 (55개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -68,6 +68,7 @@
 | 섬의 개수 | Silver | 2025-08-06 | [Link](https://www.acmicpc.net/problem/4963) |
 | 수열과 쿼리 38 | Silver | 2025-11-25 | [Link](https://www.acmicpc.net/problem/18917) |
 | 순열 | Silver | 2025-08-03 | [Link](https://www.acmicpc.net/problem/9742) |
+| 쉬운 최단거리 | Silver | 2026-01-16 | [Link](https://www.acmicpc.net/problem/14940) |
 | 스타트링크 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/5014) |
 | 스택 | Silver | 2025-12-23 | [Link](https://www.acmicpc.net/problem/10828) |
 | 스택 수열 | Silver | 2026-01-01 | [Link](https://www.acmicpc.net/problem/1874) |

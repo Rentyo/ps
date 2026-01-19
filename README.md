@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (57개)</summary>
+<summary>Silver 문제 보기 (58개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -42,6 +42,7 @@
 | 2×n 타일링 | Silver | 2025-09-08 | [Link](https://www.acmicpc.net/problem/11726) |
 | 2×n 타일링 2 | Silver | 2026-01-10 | [Link](https://www.acmicpc.net/problem/11727) |
 | 2＋1 세일 | Silver | 2025-11-21 | [Link](https://www.acmicpc.net/problem/11508) |
+| A → B | Silver | 2026-01-19 | [Link](https://www.acmicpc.net/problem/16953) |
 | DFS와 BFS | Silver | 2025-09-17 | [Link](https://www.acmicpc.net/problem/1260) |
 | Four Squares | Silver | 2026-01-08 | [Link](https://www.acmicpc.net/problem/17626) |
 | N과 M （5） | Silver | 2026-01-18 | [Link](https://www.acmicpc.net/problem/15654) |

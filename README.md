@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (58개)</summary>
+<summary>Silver 문제 보기 (59개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -75,6 +75,7 @@
 | 스타트링크 | Silver | 2025-08-23 | [Link](https://www.acmicpc.net/problem/5014) |
 | 스택 | Silver | 2025-12-23 | [Link](https://www.acmicpc.net/problem/10828) |
 | 스택 수열 | Silver | 2026-01-01 | [Link](https://www.acmicpc.net/problem/1874) |
+| 스티커 | Silver | 2026-01-20 | [Link](https://www.acmicpc.net/problem/9465) |
 | 신입 사원 | Silver | 2025-07-26 | [Link](https://www.acmicpc.net/problem/1946) |
 | 알고리즘 수업 － 깊이 우선 탐색 2 | Silver | 2025-11-22 | [Link](https://www.acmicpc.net/problem/24480) |
 | 연결 요소의 개수 | Silver | 2026-01-11 | [Link](https://www.acmicpc.net/problem/11724) |

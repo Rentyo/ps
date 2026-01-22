@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (60개)</summary>
+<summary>Silver 문제 보기 (61개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -45,6 +45,7 @@
 | A → B | Silver | 2026-01-19 | [Link](https://www.acmicpc.net/problem/16953) |
 | DFS와 BFS | Silver | 2025-09-17 | [Link](https://www.acmicpc.net/problem/1260) |
 | Four Squares | Silver | 2026-01-08 | [Link](https://www.acmicpc.net/problem/17626) |
+| N과 M （12） | Silver | 2026-01-22 | [Link](https://www.acmicpc.net/problem/15666) |
 | N과 M （5） | Silver | 2026-01-18 | [Link](https://www.acmicpc.net/problem/15654) |
 | N과 M （9） | Silver | 2026-01-21 | [Link](https://www.acmicpc.net/problem/15663) |
 | Potato | Silver | 2025-12-04 | [Link](https://www.acmicpc.net/problem/28464) |

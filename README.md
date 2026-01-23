@@ -102,7 +102,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (88개)</summary>
+<summary>Gold 문제 보기 (89개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -153,6 +153,7 @@
 | 벽 부수고 이동하기 2 | Gold | 2025-08-24 | [Link](https://www.acmicpc.net/problem/14442) |
 | 벽 타기 | Gold | 2025-10-19 | [Link](https://www.acmicpc.net/problem/23563) |
 | 별 찍기 － 10 | Gold | 2025-09-23 | [Link](https://www.acmicpc.net/problem/2447) |
+| 별 찍기 － 11 | Gold | 2026-01-23 | [Link](https://www.acmicpc.net/problem/2448) |
 | 별자리 만들기 | Gold | 2025-09-16 | [Link](https://www.acmicpc.net/problem/4386) |
 | 부분합 | Gold | 2025-11-08 | [Link](https://www.acmicpc.net/problem/1806) |
 | 불！ | Gold | 2025-10-28 | [Link](https://www.acmicpc.net/problem/4179) |

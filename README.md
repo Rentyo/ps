@@ -102,12 +102,13 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (89개)</summary>
+<summary>Gold 문제 보기 (90개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 1로 만들기 2 | Gold | 2025-11-11 | [Link](https://www.acmicpc.net/problem/12852) |
 | 2048 （Easy） | Gold | 2025-08-13 | [Link](https://www.acmicpc.net/problem/12100) |
+| AC | Gold | 2026-01-24 | [Link](https://www.acmicpc.net/problem/5430) |
 | Fegla | Gold | 2025-11-07 | [Link](https://www.acmicpc.net/problem/10691) |
 | Fruit Feast | Gold | 2025-11-04 | [Link](https://www.acmicpc.net/problem/11964) |
 | List of Unique Numbers | Gold | 2025-12-03 | [Link](https://www.acmicpc.net/problem/13144) |

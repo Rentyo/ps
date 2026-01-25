@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary>Silver 문제 보기 (61개)</summary>
+<summary>Silver 문제 보기 (62개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -97,6 +97,7 @@
 | 팩토리얼 0의 개수 | Silver | 2025-12-18 | [Link](https://www.acmicpc.net/problem/1676) |
 | 프린터 큐 | Silver | 2026-01-02 | [Link](https://www.acmicpc.net/problem/1966) |
 | 피보나치 함수 | Silver | 2026-01-06 | [Link](https://www.acmicpc.net/problem/1003) |
+| 한 줄로 서기 | Silver | 2026-01-25 | [Link](https://www.acmicpc.net/problem/1138) |
 | 헌내기는 친구가 필요해 | Silver | 2026-01-13 | [Link](https://www.acmicpc.net/problem/21736) |
 | 효율적인 해킹 | Silver | 2025-08-07 | [Link](https://www.acmicpc.net/problem/1325) |
 </details>

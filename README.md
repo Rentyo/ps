@@ -11,12 +11,13 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Bronze 문제 보기 (16개)</summary>
+<summary>Bronze 문제 보기 (17개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | $A ＋ B － C$ | Bronze | 2025-12-08 | [Link](https://www.acmicpc.net/problem/31403) |
 | ACM 호텔 | Bronze | 2025-12-08 | [Link](https://www.acmicpc.net/problem/10250) |
+| Cool Numbers | Bronze | 2026-01-26 | [Link](https://www.acmicpc.net/problem/6815) |
 | FizzBuzz | Bronze | 2025-12-17 | [Link](https://www.acmicpc.net/problem/28702) |
 | Hashing | Bronze | 2025-12-12 | [Link](https://www.acmicpc.net/problem/15829) |
 | ISBN | Bronze | 2025-12-16 | [Link](https://www.acmicpc.net/problem/14626) |

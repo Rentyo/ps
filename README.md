@@ -105,7 +105,7 @@
 </details>
 
 <details>
-<summary>Gold 문제 보기 (90개)</summary>
+<summary>Gold 문제 보기 (91개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -191,6 +191,7 @@
 | 캐슬 디펜스 | Gold | 2025-08-30 | [Link](https://www.acmicpc.net/problem/17135) |
 | 크롬 | Gold | 2025-10-26 | [Link](https://www.acmicpc.net/problem/20667) |
 | 테트로미노 | Gold | 2025-09-28 | [Link](https://www.acmicpc.net/problem/14500) |
+| 토마토 | Gold | 2026-01-28 | [Link](https://www.acmicpc.net/problem/7569) |
 | 토마토 | Gold | 2025-09-10 | [Link](https://www.acmicpc.net/problem/7576) |
 | 퇴사 2 | Gold | 2025-09-09 | [Link](https://www.acmicpc.net/problem/15486) |
 | 특정한 최단 경로 | Gold | 2025-11-30 | [Link](https://www.acmicpc.net/problem/1504) |

@@ -11,7 +11,7 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Bronze 문제 보기 (17개)</summary>
+<summary>Bronze 문제 보기 (18개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -27,6 +27,7 @@
 | 바구니 뒤집기 | Bronze | 2025-09-15 | [Link](https://www.acmicpc.net/problem/10811) |
 | 분해합 | Bronze | 2025-11-13 | [Link](https://www.acmicpc.net/problem/2231) |
 | 숫자의 개수 | Bronze | 2025-12-09 | [Link](https://www.acmicpc.net/problem/2577) |
+| 아름다운 수 | Bronze | 2026-01-27 | [Link](https://www.acmicpc.net/problem/2774) |
 | 웰컴 키트 | Bronze | 2025-12-11 | [Link](https://www.acmicpc.net/problem/30802) |
 | 음계 | Bronze | 2025-12-09 | [Link](https://www.acmicpc.net/problem/2920) |
 | 직각삼각형 | Bronze | 2025-12-10 | [Link](https://www.acmicpc.net/problem/4153) |

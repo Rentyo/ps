@@ -11,7 +11,7 @@
 
 <!-- BOJ_START -->
 <details>
-<summary>Bronze 문제 보기 (18개)</summary>
+<summary>Bronze 문제 보기 (19개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -33,6 +33,7 @@
 | 직각삼각형 | Bronze | 2025-12-10 | [Link](https://www.acmicpc.net/problem/4153) |
 | 최대공약수와 최소공배수 | Bronze | 2025-12-15 | [Link](https://www.acmicpc.net/problem/2609) |
 | 팰린드롬수 | Bronze | 2025-12-14 | [Link](https://www.acmicpc.net/problem/1259) |
+| 홍익대학교 | Bronze | 2026-01-29 | [Link](https://www.acmicpc.net/problem/16394) |
 </details>
 
 <details>

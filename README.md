@@ -232,7 +232,7 @@
 
 <!-- PRGM_START -->
 <details>
-<summary>1 문제 보기 (10개)</summary>
+<summary>1 문제 보기 (11개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -241,6 +241,7 @@
 | 강원도에 위치한 생산공장 목록 출력하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/131112) |
 | 나이 정보가 없는 회원 수 구하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/131528) |
 | 인기있는 아이스크림 | 1 | 2026-05-07 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/133024) |
+| 잡은 물고기 중 가장 큰 물고기의 길이 구하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/298515) |
 | 잡은 물고기의 평균 길이 구하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/293259) |
 | 조건에 맞는 도서 리스트 출력하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/144853) |
 | 최댓값 구하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/59415) |

@@ -232,11 +232,12 @@
 
 <!-- PRGM_START -->
 <details>
-<summary>1 문제 보기 (8개)</summary>
+<summary>1 문제 보기 (9개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 12세 이하인 여자 환자 목록 출력하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/132201) |
+| 가장 비싼 상품 구하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/131697) |
 | 강원도에 위치한 생산공장 목록 출력하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/131112) |
 | 나이 정보가 없는 회원 수 구하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/131528) |
 | 인기있는 아이스크림 | 1 | 2026-05-07 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/133024) |

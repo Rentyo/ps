@@ -265,10 +265,11 @@
 </details>
 
 <details>
-<summary>3 문제 보기 (2개)</summary>
+<summary>3 문제 보기 (3개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
+| 자동차 대여 기록에서 대여중 ／ 대여 가능 여부 구분하기 | 3 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/157340) |
 | 정수 삼각형 | 3 | 2025-09-07 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/43105) |
 | 합승 택시 요금 | 3 | 2025-09-16 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/72413) |
 </details>

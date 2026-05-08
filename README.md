@@ -232,10 +232,11 @@
 
 <!-- PRGM_START -->
 <details>
-<summary>1 문제 보기 (3개)</summary>
+<summary>1 문제 보기 (4개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
+| 12세 이하인 여자 환자 목록 출력하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/132201) |
 | 인기있는 아이스크림 | 1 | 2026-05-07 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/133024) |
 | 조건에 맞는 도서 리스트 출력하기 | 1 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/144853) |
 | 평균 일일 대여 요금 구하기 | 1 | 2026-05-07 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/151136) |

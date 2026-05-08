@@ -276,11 +276,12 @@
 </details>
 
 <details>
-<summary>4 문제 보기 (2개)</summary>
+<summary>4 문제 보기 (3개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
 | 서울에 위치한 식당 목록 출력하기 | 4 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/131118) |
+| 저자 별 카테고리 별 매출액 집계하기 | 4 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/144856) |
 | ［카카오 인턴］ 동굴 탐험 | 4 | 2025-08-27 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/67260) |
 </details>
 

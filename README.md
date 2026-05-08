@@ -249,7 +249,7 @@
 </details>
 
 <details>
-<summary>2 문제 보기 (5개)</summary>
+<summary>2 문제 보기 (6개)</summary>
 
 | Problem | Tier | Solved On | Link |
 |---------|------|-----------|------|
@@ -257,6 +257,7 @@
 | NULL 처리하기 | 2 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/59410) |
 | ROOT 아이템 구하기 | 2 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/273710) |
 | 가격이 제일 비싼 식품의 정보 출력하기 | 2 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/131115) |
+| 동물 수 구하기 | 2 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/59406) |
 | 최솟값 구하기 | 2 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/59038) |
 </details>
 

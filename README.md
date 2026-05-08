@@ -244,6 +244,14 @@
 </details>
 
 <details>
+<summary>2 문제 보기 (1개)</summary>
+
+| Problem | Tier | Solved On | Link |
+|---------|------|-----------|------|
+| 3월에 태어난 여성 회원 목록 출력하기 | 2 | 2026-05-08 | [Link](https://school.programmers.co.kr/learn/courses/30/lessons/131120) |
+</details>
+
+<details>
 <summary>3 문제 보기 (2개)</summary>
 
 | Problem | Tier | Solved On | Link |

@@ -375,6 +375,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/Rentyo/ps/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/Rentyo/ps/tree/master/0004-median-of-two-sorted-arrays) |
+| [1929-concatenation-of-array](https://github.com/Rentyo/ps/tree/master/1929-concatenation-of-array) |
 ## Hash Table
 |  |
 | ------- |
@@ -391,4 +392,8 @@
 |  |
 | ------- |
 | [0007-reverse-integer](https://github.com/Rentyo/ps/tree/master/0007-reverse-integer) |
+## Simulation
+|  |
+| ------- |
+| [1929-concatenation-of-array](https://github.com/Rentyo/ps/tree/master/1929-concatenation-of-array) |
 <!---LeetCode Topics End-->

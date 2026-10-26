@@ -377,6 +377,7 @@
 | [0004-median-of-two-sorted-arrays](https://github.com/Rentyo/ps/tree/master/0004-median-of-two-sorted-arrays) |
 | [0485-max-consecutive-ones](https://github.com/Rentyo/ps/tree/master/0485-max-consecutive-ones) |
 | [0645-set-mismatch](https://github.com/Rentyo/ps/tree/master/0645-set-mismatch) |
+| [1441-build-an-array-with-stack-operations](https://github.com/Rentyo/ps/tree/master/1441-build-an-array-with-stack-operations) |
 | [1470-shuffle-the-array](https://github.com/Rentyo/ps/tree/master/1470-shuffle-the-array) |
 | [1929-concatenation-of-array](https://github.com/Rentyo/ps/tree/master/1929-concatenation-of-array) |
 ## Hash Table
@@ -399,6 +400,7 @@
 ## Simulation
 |  |
 | ------- |
+| [1441-build-an-array-with-stack-operations](https://github.com/Rentyo/ps/tree/master/1441-build-an-array-with-stack-operations) |
 | [1929-concatenation-of-array](https://github.com/Rentyo/ps/tree/master/1929-concatenation-of-array) |
 ## Bit Manipulation
 |  |
@@ -408,4 +410,8 @@
 |  |
 | ------- |
 | [0645-set-mismatch](https://github.com/Rentyo/ps/tree/master/0645-set-mismatch) |
+## Stack
+|  |
+| ------- |
+| [1441-build-an-array-with-stack-operations](https://github.com/Rentyo/ps/tree/master/1441-build-an-array-with-stack-operations) |
 <!---LeetCode Topics End-->
